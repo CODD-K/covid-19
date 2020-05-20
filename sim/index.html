@@ -8,251 +8,249 @@
 
 <body>
 
-	<div id="sandbox">
-	
-		<div id="controls">
+    <div id="sandbox">
 
-			<div id="hide_on_first_playthrough">
-				<div id="section_dynamics">
+    	<div id="controls">
 
-					On <i>average</i>,
-					each <icon i></icon>...
-					<br><br>
-					
-					<div id="label_transmission">
-						Infects 1 <icon s></icon> per <span id="label_p_transmission">N</span> days
+    		<div id="hide_on_first_playthrough">
+    			<div id="section_dynamics">
+
+    				<i>ശരാശരി</i>,
+    				ഓരോ <icon i></icon>...
+    				<br><br>
+
+    				<div id="label_transmission">
+    					1 <icon s></icon> നെ <span id="label_p_transmission">N</span> ദിവസത്തിൽ രോഗബാധിതരാക്കുന്നു 
+    					<br>
+    					<span id="label_transmission_caveat">
+    						(രോഗബാധയുടെ തുടക്കത്തിൽ)<br>
+    					</span>
+    					<input class="sim_input" type="range" id="p_transmission" min="1" max="30" step="1" value="4">
+    				</div>
+
+    				<div id="label_c_exposed">
+							<input class="sim_checkbox" type="checkbox" id="c_exposed">
+							
+    					<icon e></icon> നിന്ന് <icon i></icon> എത്താൻ <span id="label_p_exposed">N</span> ദിവസങ്ങൾ എടുക്കുന്നു
+    					<br>
+    					<input class="sim_input" type="range" id="p_exposed" min="1" max="30" step="1" value="3">
+    				</div>
+
+    				<div id="label_c_recovery">
+							<input class="sim_checkbox" type="checkbox" id="c_recovery">
+							<icon i></icon> നിന്ന് <icon r></icon> എത്താൻ <span id="label_p_recovery">N</span> ദിവസങ്ങൾ എടുക്കുന്നു
+    					<br>
+    					<input class="sim_input" type="range" id="p_recovery" min="1" max="30" step="1" value="10">
+    				</div>
+
+    				<div id="label_c_waning">
+    					<input class="sim_checkbox" type="checkbox" id="c_waning">
+    					പ്രതിരോധ ശേഷി നഷ്ടപ്പെടുന്നു <icon s></icon> - <span id="label_p_waning">N</span> മാസങ്ങളിൽ
+    					<br>
+    					<input class="sim_input" type="range" id="p_waning" min="1" max="60" step="1" value="12">
+    				</div>
+
+    				<hr>
+
+    			</div>
+
+    			<div id="section_r">
+
+    				ആർ<sub>0</sub> - <span id="label_p_r0" toFixed="2"></span>
+    				<canvas class="r_canvas" id="canvas_r0"></canvas>
+    				<!--input class="sim_input" type="range" id="p_r0" min="0" max="6" step="0.01" disabled-->
+    				<br>
+
+    				<span id="label_s">
+    					<icon s></icon> <i>അല്ലാത്ത </i> ആൾക്കാരുടെ %
+    					<input class="sim_input" type="range" id="p_s" min="0" max="1" step="0.001" value="0" disabled>
+    					<div class="herd"></div>
+    					<br>
+    				</span>
+
+    				<span id="int_block_0">
+    					മെച്ചപ്പെട്ട വ്യക്തി ശുചിത്വം
+    					<br>
+    					<input class="sim_input recordable" type="range" id="p_hygiene" min="0" max="1" step="0.001" value="0">
+    					<br>
+    				</span>
+    				<span id="int_block_1">
+    					സാമൂഹിക അകലം പാലിക്കൽ
+    					<br>
+    					<input class="sim_input recordable" type="range" id="p_distancing" min="0" max="1" step="0.001" value="0">
+    					<br>
+    				</span>
+    				<span id="int_block_2">
+    					രോഗികളെ ഐസൊലേറ്റ് ചെയ്യൽ
+    					<br>
+    					<input class="sim_input recordable" type="range" id="p_isolate" min="0" max="1" step="0.001" value="0">
+    					<br>
+    					സമ്പർക്കത്തിൽ വന്നവരെ ക്വാറന്റൈൻ ചെയ്യൽ
+    					<br>
+    					<input class="sim_input recordable" type="range" id="p_quarantine" min="0" max="1" step="0.001" value="0">
+    					<br>
+    				</span>
+    				<span id="int_block_3">
+    					മാസ്ക് ധരിക്കൽ
+    					<br>
+    					<input class="sim_input recordable" type="range" id="p_masks" min="0" max="1" step="0.001" value="0">
+    					<br>
+    				</span>
+    				<span id="int_block_4">
+    					വേനലിന്റെ കാഠിന്യം
+    					<br>
+    					<input class="sim_input recordable" type="range" id="p_summer" min="0" max="1" step="0.001" value="0">
+    					<br>
+    				</span>
+    				<span id="int_block_5">
+    					വാക്സിൻ നൽകൽ 
+    					<br>
+    					<input class="sim_input recordable" type="range" id="p_vaccines" min="0" max="1" step="0.001" value="0">
+    					<br>
+    				</span>
+
+    				<span id="label_re">
+    					R ഇപ്പോൾ <span id="label_p_re" toFixed="2"></span>
+    					<canvas class="r_canvas" id="canvas_re"></canvas>
+    					<!--<input class="sim_input" type="range" id="p_re" min="0" max="6" step="0.01" disabled>-->
+    				</span>
+
+    				<span id="hospital_capacity">
+    					ICU ശേഷി - <span id="label_p_hospital">N</span>%
+    					<br>
+    					<input class="sim_input recordable" type="range" id="p_hospital" min="100" max="1000" step="1" value="333">
+    				</span>
+
+    				<hr id="divider">
+
+    			</div>
+
+    			<div id="section_meta">
+
+    				<span id="label_p_years" toFixed="1">N</span> വർഷങ്ങൾ
+    				<span id="section_meta_years">
+    					<br>
+    					<input class="sim_input" type="range" id="p_years" min="0.5" max="10" step="0.5" value="2">
+    					<br>
+    				</span>
+    				<span id="label_p_speed">N</span> സെക്കൻഡിൽ സിമുലേറ്റ് ചെയ്യുക
+    				<br>
+    				<input class="sim_input" type="range" id="p_speed" min="1" max="60" step="1" value="30">
+
+    			</div>
+    		</div>
+
+    		<div id="sim_controls">
+    			<div class="big_button">
+    				<div id="bb_start">
+    					<div class='control_icon' start></div>
+    					തുടങ്ങുക
+    				</div>
+    				<div id="bb_pause">
+    					<div class='control_icon' pause></div>
+    					നിർത്തുക
+    				</div>
+    				<div id="bb_continue">
+    					<div class='control_icon' continue></div>
+    					തുടരുക
+    				</div>
+    				<div id="bb_reset">
+    					<div class='control_icon' reset></div>
+    					പുനഃക്രമീകരിക്കുക
+    				</div>
+    			</div>
+    			<!--div id="sb_stop">
+    				Stop
+    			</div-->
+    			<div id="sb_reset">
+    				എല്ലാം പുനഃക്രമീകരിക്കുക
+    			</div>
+    			<div id="sb_replay">
+    				വീണ്ടും പ്ലേ ചെയ്യുക
+    			</div>
+    		</div>
+
+    	</div>
+
+    	<div id="graph">
+    		<canvas id="graphCanvas"></canvas>
+    		<div id="month_ticks">
+    			<!--
+    			<div><span>2020</span></div>
+    			<div><span>2021</span></div>
+    			-->
+    		</div>
+    		<div id="legend">
+
+    			<span id="label_susceptible" class="lines">
+    				<icon s></icon> രോഗം പിടിപെടാൻ സാദ്ധ്യത ഉള്ളവർ<span id="show_percent_s"></span>
+    				<br>
+    			</span>
+    			<span id="label_exposed" class="lines">
+    				<icon e></icon> രോഗിയുമായി സമ്പർക്കം വന്നവർ<span id="show_percent_e"></span>
+    				<br>
+    			</span>
+    			<span id="label_infectious" class="lines">
+    				<icon i></icon> രോഗം പടർത്താൻ ശേഷി ഉള്ളവർ<span id="show_percent_i"></span>
+    				<br>
+    			</span>
+    			<span id="label_removed" class="lines">
+    				<icon r></icon> രോഗം ഭേദപ്പെട്ടവർ<span id="show_percent_r"></span>
+    			</span>
+
+    			<br class="lines">
+
+    			<span id="label_herd_immunity">
+    			--- ഹെർഡ്‌ ഇമ്മ്യൂണിറ്റി
+    			</span>
+
+    			<br class="lines">
+
+    			<span id="label_capacity">
+    			––– ICU ശേഷി
+    			</span>
+
+    		</div>
+    	</div>
+
+    	<div id="pointer">
+    		<div id="hand_container">
+    			<div id="hand"></div>
+    		</div>
+    		<div id="pointer_words">
+    			<span id="pointer_params">
+    				സിമുലേഷൻ വേറെ സംഖ്യകൾ ഉപയോഗിച്ച് പ്രവർത്തിപ്പിച്ചു നോക്കുക
+    				<span id="pointer_params_2">
+    					<b>(നോട്ട് : സിമുലേഷൻ <i>പ്രവർത്തിക്കുമ്പോൾ തന്നെ</i> സംഖ്യകൾ മാറ്റി നോക്കാവുന്നതാണ്)</b>
+    				</span>
+    			</span>
+    			<span id="pointer_scroll">
+    				സിമുലേഷൻ പ്രവർത്തിപ്പിച്ചു കഴിഞ്ഞാൽ ബാക്കി ലേഖനം വായിക്കാൻ താഴേക്ക് സ്ക്രോൾ ചെയ്യുക
+    			</span>
+    			<span id="pointer_replay">
+    				ഈ സിമുലേഷനിൽ ഒരു "സാങ്കൽപ്പിക സാഹചര്യം" റെക്കോർഡ് ചെയ്തിട്ടുണ്ട്.
 						<br>
-						<span id="label_transmission_caveat">
-							(at the start of the epidemic)<br>
-						</span>
-						<input class="sim_input" type="range" id="p_transmission" min="1" max="30" step="1" value="4">
-					</div>
+						കാണുവാൻ നമ്പറുകൾ മാറ്റം വരുത്തും മുന്നേ "തുടങ്ങുക" ബട്ടൺ ക്ലിക്ക് ചെയ്യുക
+    			</span>
+    		</div>
+    	</div>
 
-					<div id="label_c_exposed">
-						<input class="sim_checkbox" type="checkbox" id="c_exposed">
-						Takes <span id="label_p_exposed">N</span> days to go from <icon e></icon> to <icon i></icon>
-						<br>
-						<input class="sim_input" type="range" id="p_exposed" min="1" max="30" step="1" value="3">
-					</div>
-					
-					<div id="label_c_recovery">
-						<input class="sim_checkbox" type="checkbox" id="c_recovery">
-						Takes <span id="label_p_recovery">N</span> days to go from <icon i></icon> to <icon r></icon>
-						<br>
-						<input class="sim_input" type="range" id="p_recovery" min="1" max="30" step="1" value="10">
-					</div>
-					
-					<div id="label_c_waning">
-						<input class="sim_checkbox" type="checkbox" id="c_waning">
-						Loses immunity <icon s></icon> in <span id="label_p_waning">N</span> months
-						<br>
-						<input class="sim_input" type="range" id="p_waning" min="1" max="60" step="1" value="12">
-					</div>
+    </div>
 
-					<hr>
-
-				</div>
-
-				<div id="section_r">
-
-					R<sub>0</sub> is <span id="label_p_r0" toFixed="2"></span>
-					<canvas class="r_canvas" id="canvas_r0"></canvas>
-					<!--input class="sim_input" type="range" id="p_r0" min="0" max="6" step="0.01" disabled-->
-					<br>
-
-					<span id="label_s">
-						% of people who are <i>NOT</i> <icon s></icon>
-						<input class="sim_input" type="range" id="p_s" min="0" max="1" step="0.001" value="0" disabled>
-						<div class="herd"></div>
-						<br>
-					</span>
-
-					<span id="int_block_0">
-						Increased Hygiene
-						<br>
-						<input class="sim_input recordable" type="range" id="p_hygiene" min="0" max="1" step="0.001" value="0">
-						<br>
-					</span>
-					<span id="int_block_1">
-						Physical Distancing
-						<br>
-						<input class="sim_input recordable" type="range" id="p_distancing" min="0" max="1" step="0.001" value="0">
-						<br>
-					</span>
-					<span id="int_block_2">
-						Isolating Cases
-						<br>
-						<input class="sim_input recordable" type="range" id="p_isolate" min="0" max="1" step="0.001" value="0">
-						<br>
-						Quarantining Contacts
-						<br>
-						<input class="sim_input recordable" type="range" id="p_quarantine" min="0" max="1" step="0.001" value="0">
-						<br>
-					</span>
-					<span id="int_block_3">
-						Face Masks
-						<br>
-						<input class="sim_input recordable" type="range" id="p_masks" min="0" max="1" step="0.001" value="0">
-						<br>
-					</span>
-					<span id="int_block_4">
-						Strength of Summer
-						<br>
-						<input class="sim_input recordable" type="range" id="p_summer" min="0" max="1" step="0.001" value="0">
-						<br>
-					</span>
-					<span id="int_block_5">
-						Vaccinations
-						<br>
-						<input class="sim_input recordable" type="range" id="p_vaccines" min="0" max="1" step="0.001" value="0">
-						<br>
-					</span>
-
-					<span id="label_re">
-						R is now <span id="label_p_re" toFixed="2"></span>
-						<canvas class="r_canvas" id="canvas_re"></canvas>
-						<!--<input class="sim_input" type="range" id="p_re" min="0" max="6" step="0.01" disabled>-->
-					</span>
-
-					<span id="hospital_capacity">
-						ICU capacity at <span id="label_p_hospital">N</span>%
-						<br>
-						<input class="sim_input recordable" type="range" id="p_hospital" min="100" max="1000" step="1" value="333">
-					</span>
-
-					<hr id="divider">
-
-				</div>
-
-				<div id="section_meta">
-
-					Simulate <span id="label_p_years" toFixed="1">N</span> years
-					<span id="section_meta_years">
-						<br>
-						<input class="sim_input" type="range" id="p_years" min="0.5" max="10" step="0.5" value="2">
-						<br>
-					</span>
-					in <span id="label_p_speed">N</span> seconds
-					<br>
-					<input class="sim_input" type="range" id="p_speed" min="1" max="60" step="1" value="30">
-
-				</div>
-			</div>
-
-			<div id="sim_controls">
-				<div class="big_button">
-					<div id="bb_start">
-						<div class='control_icon' start></div>
-						Start
-					</div>
-					<div id="bb_pause">
-						<div class='control_icon' pause></div>
-						Pause
-					</div>
-					<div id="bb_continue">
-						<div class='control_icon' continue></div>
-						Continue
-					</div>
-					<div id="bb_reset">
-						<div class='control_icon' reset></div>
-						Reset
-					</div>
-				</div>
-				<!--div id="sb_stop">
-					Stop
-				</div-->
-				<div id="sb_reset">
-					Reset All
-				</div>
-				<div id="sb_replay">
-					Replay Recording
-				</div>
-			</div>
-
-		</div>
-
-		<div id="graph">
-			<canvas id="graphCanvas"></canvas>
-			<div id="month_ticks">
-				<!--
-				<div><span>2020</span></div>
-				<div><span>2021</span></div>
-				-->
-			</div>
-			<div id="legend">
-				
-				<span id="label_susceptible" class="lines">
-					<icon s></icon> Susceptible<span id="show_percent_s"></span>
-					<br>
-				</span>
-				<span id="label_exposed" class="lines">
-					<icon e></icon> Exposed<span id="show_percent_e"></span>
-					<br>
-				</span>
-				<span id="label_infectious" class="lines">
-					<icon i></icon> Infectious<span id="show_percent_i"></span>
-					<br>
-				</span>
-				<span id="label_removed" class="lines">
-					<icon r></icon> Recovered<span id="show_percent_r"></span>
-				</span>
-				
-				<br class="lines">
-				
-				<span id="label_herd_immunity">
-				- - - Herd Immunity
-				</span>
-
-				<br class="lines">
-				
-				<span id="label_capacity">
-				––– ICU Capacity
-				</span>
-
-			</div>
-		</div>
-
-		<div id="pointer">
-			<div id="hand_container">
-				<div id="hand"></div>
-			</div>
-			<div id="pointer_words">
-				<span id="pointer_params">
-					Try re-running the simulation
-					with different numbers!
-					<span id="pointer_params_2">
-						<b>(note: you can change the numbers <i>while</i> the sim is running)</b>
-					</span>
-				</span>
-				<span id="pointer_scroll">
-					Once you're done playing around,
-					scroll down to keep reading!
-				</span>
-				<span id="pointer_replay">
-					This simulation has a "recorded scenario"!
-					<br>
-					Click "Start" to watch the recording <i>before</i>
-					you change any of the numbers
-				</span>
-			</div>
-		</div>
-
-	</div>
-
-	<span id="month_names">
-		<span>jan</span>
-		<span>feb</span>
-		<span>mar</span>
-		<span>apr</span>
-		<span>may</span>
-		<span>jun</span>
-		<span>jul</span>
-		<span>aug</span>
-		<span>sep</span>
-		<span>oct</span>
-		<span>nov</span>
-		<span>dec</span>
-	</span>
+    <span id="month_names">
+    	<span>ജനു</span>
+    	<span>ഫിബ്ര</span>
+    	<span>മാർച്ച് </span>
+    	<span>ഏപ്രിൽ</span>
+    	<span>മെയ്</span>
+    	<span>ജൂൺ</span>
+    	<span>ജൂലൈ</span>
+    	<span>ഓഗസ്റ്റ്</span>
+    	<span>സെപ്റ്റ</span>
+    	<span>ഒക്ടോ</span>
+    	<span>നവ</span>
+			<span>ഡിസം</span>
+    </span>
 
 </body>
 
@@ -264,4 +262,3 @@
 <script src="js/main.js"></script>
 
 <script src="js/simplebar.min.js"></script>
-
