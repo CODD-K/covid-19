@@ -344,7 +344,7 @@ let _showAllControls = ()=>{
 	hofp.style.position = "absolute";
     hofp.style.top = "-1000px";
 	setTimeout(()=>{
-		let newHeight = hofp.getBoundingClientRect().height + 10;
+		let newHeight = hofp.getBoundingClientRect().height + 55;
 		hofp.style.position = "";
     	hofp.style.top = "";
 		hofp.style.height = originalHeight+"px";
