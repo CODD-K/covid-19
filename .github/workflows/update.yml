@@ -12,7 +12,7 @@ on:
     - cron: "*/30 * * * *"
 
 jobs:
-  convert_via_pandoc:
+  update_from_hackmd:
     runs-on: ubuntu-18.04
     steps:
       - name: Get the current source from master
