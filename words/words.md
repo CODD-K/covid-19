@@ -69,11 +69,9 @@
 
 [^caveats]: **ഓർമ്മിക്കുക: ഈ സിമുലേഷനുകളെല്ലാം പഠനാവശ്യത്തിനായി ലളിതമാക്കിയതാണ്.**
 
-
 > One simplification: When you tell this simulation "Infect 1 new person every X days", it's actually increasing # of infected by 1/X each day. Same for future settings in these simulations – "Recover every X days" is actually reducing # of infected by 1/X each day.
-
+>
 > Those *aren't* exactly the same, but it's close enough, and for educational purposes it's less opaque than setting the transmission/recovery rates directly.
-
 
 <div class="sim">
         <iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
@@ -137,8 +135,7 @@
 
 <b style='color:#ff4040'>ചുവപ്പ് <b style='color:#FF9393'>+ പിങ്ക്</b> കർവ്</b> *നിലവിലുള്ള* കേസുകൾ (രോഗമുള്ളവർ <icon i></icon> + സ്വീകർത്താക്കൾ <span class="nowrap"><icon e></icon>),</span><br>
 
->	<b style='color:#888'>ചാരനിറമുള്ള കർവ്</b> <em>മൊത്തം</em> കേസുകൾ (നിലവിലുള്ളവർ + സുഖപ്പെട്ടവർ <span class="nowrap"><icon r></icon>):</span>
-
+> <b style='color:#888'>ചാരനിറമുള്ള കർവ്</b> <em>മൊത്തം</em> കേസുകൾ (നിലവിലുള്ളവർ + സുഖപ്പെട്ടവർ <span class="nowrap"><icon r></icon>\):</span>
 
 <div class="sim">
         <iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
@@ -182,17 +179,15 @@
 
 [^exact_formula]: ഓർമ്മിക്കുക R = R<sub>0</sub> * നടക്കുന്ന വ്യാപനത്തിന്റെ അനുപാതം. ഇതോടൊപ്പം ഓർക്കുക = 1 - വ്യാപനത്തിന്റെ അനുപാതം *തടഞ്ഞത്*
 
-
-> Therefore, to get R < 1, you need to get R<sub>0</sub> * TransmissionsAllowed < 1. 
-
+> Therefore, to get R < 1, you need to get R<sub>0</sub> * TransmissionsAllowed < 1.
+>
 > Therefore, TransmissionsAllowed < 1/R<sub>0</sub>
-
+>
 > Therefore, 1 - TransmissionsStopped < 1/R<sub>0</sub>
-
+>
 > Therefore, TransmissionsStopped > 1 - 1/R<sub>0</sub>
-
+>
 > Therefore, you need to stop more than **1 - 1/R<sub>0</sub>** of transmissions to get R < 1 and contain the virus!
-
 
 ![](pics/r4.png) (ഞങ്ങളൂടെ സിമുലേഷനിലെ R<sub>0</sub> വിലയോ മറ്റേതെങ്കിലും സംഖ്യയോ വളരെ കുറവോ, കൂടുതലോ ആണെന്ന് നിങ്ങൾക്ക് അഭിപ്രായമുണ്ടെങ്കിൽ, അത് വളരെ നല്ല കാര്യമാണ്. നിങ്ങൾ ഞങ്ങളുടെ നിഗമനങ്ങളെ ചാലഞ്ച് ചെയ്യുകയാണ്! ഈ വിവരണത്തിന്റെ അവസാനം ഒരു "സാൻഡ്ബോക്സ് മോഡ്" ഉണ്ട്, അവിടെ നിങ്ങൾക്ക് *സ്വന്തം* സംഖ്യകൾ ചേർക്കാം, എന്നിട്ട് സിമുലേറ്റ് ചെയ്ത് എന്ത് സംഭവിക്കുമെന്ന് നോക്കാം)
 
@@ -211,15 +206,13 @@
 
 ###സീൻ 0: ഒന്നും ചെയ്യാതിരിക്കുക ോവിഡ്-19 ബാധിച്ച ഒരു പത്തിരുപതാളുകൾ ഐസിയുകളിൽ പ്രവേശിക്കേണ്ടി വരും.[^icu_covid] അമേരിക്ക പോലുള്ള ഒരു സമ്പന്ന രാജ്യത്ത്, 3400 ആളുകൾക്ക് ഒരു ഐസിയു വച്ചാണുള്ളത്.[^icu_us] അതായത്, അമേരിക്കക്ക 3400 ആളുകളിൽ 20 ആളുകൾക്ക് *ഒരേ സമയം* രോഗം ബാധിക്കുന്നത് കൈകാര്യം ചെയ്യാൻ കഴിയും – അല്ലെങ്കിൽ, ജനസംഖ്യയുടെ 0.6% ശതമാനത്തിന് രോഗം വരുന്നത്. [^icu_covid]: **[UPDATED MAY 15]** Many of you rightly pointed out that our previous citation for "**1 in 20** need hospitalization" was based off old USA data on *confirmed* cases – which was way lower than the *real* number of cases, due to lack of tests.
 
-
 > So, let's look at the country with the *most* tests per capita: Iceland. [On May 15th, 2020](https://web.archive.org/web/20200516012656/https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Iceland), they had 115 hospitalized among 1802 confirmed cases ≈ 6.4% hospitalization rate, or **1 in 16**.
-
+>
 > [A more recent study of COVID-19 in France](https://science.sciencemag.org/content/early/2020/05/12/science.abc3517) – using not just official confirmed cases but also antibody test data – found that “3.6% of infected individuals are hospitalized”. Or, **1 in 28.**
-
+>
 > Overall, there's a lot of uncertainty, but "1 in 20" is roughly close. Besides, for the rest of these simulations, we *triple* hospital capacity – so, even if "1 in 20" is three times too high, the point still stands.
-
+>
 > Old citation: ~~["Percentage of COVID-19 cases in the United States from February 12 to March 16, 2020 that required intensive care unit (ICU) admission, by age group"](https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/). Between 4.9% to 11.5% of *all* COVID-19 cases required ICU. Generously picking the lower range, that's 5% or 1 in 20. Note that this total is specific to the US's age structure, and will be higher in countries with older populations, lower in countries with younger populations.~~
-
 
 [^icu_us]: “Number of ICU beds = 96,596”. From [the Society of Critical Care Medicine](https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) USA Population was 328,200,000 in 2019. 96,596 out of 328,200,000 = roughly 1 in 3400. ഇനിയിത് *മൂന്നിരട്ടിയായി* 2% ആയാൽ, *നമ്മൾ ഒന്നും ചെയ്യാതെയിരുന്നാൽ* ഇതായിരിക്കും സംഭവിച്ചിട്ടുണ്ടാവുക:
 
@@ -241,9 +234,7 @@ The "Flatten The Curve" plan was touted by every public health organization, whi
 
 [^yong]: “He says that the actual goal is the same as that of other countries: flatten the curve by staggering the onset of infections. As a consequence, the nation may achieve herd immunity; it’s a side effect, not an aim. [...] The government’s actual coronavirus action plan, available online, doesn’t mention herd immunity at all.”
 
-
 > From a [The Atlantic article by Ed Yong](https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/)
-
 
 Both plans, though, had a literally fatal flaw.
 
@@ -337,9 +328,8 @@ How?
 
 [^timeline]: **രോഗബാധയേൽക്കാൻ ശരാശരി 3 ദിവസങ്ങൾ:** “ആദ്യകാല COVID-19 കേസുകളെക്കുറിച്ചുള്ള ഒരു പ്രത്യേക പഠനത്തിൽ നിന്ന് ശരാശരി 5.2 ദിവസത്തെ ഇൻകുബേഷൻ കാലയളവ് രോഗം പകർന്ന് തുടങ്ങുന്നുവെന്ന് ഞങ്ങൾ അനുമാനിക്കുന്നു, രോഗലക്ഷണം ആരംഭിക്കുന്നതിന് മുമ്പായി 2.3 ദിവസം (95% CI, 0.8–3.0 ദിവസം) മുതൽ പകർച്ചവ്യാധി ആരംഭിച്ചുവെന്ന് ഞങ്ങൾ അനുമാനിച്ചു” (എന്നു വച്ചാൽ: ലക്ഷണങ്ങൾ അഞ്ചാം ദിവസം ആരംഭിക്കുന്നു എന്ന് കരുതുക, പകർച്ചവ്യാധി ആരംഭിക്കുന്നത് അതിനു 2 ദിവസം മുമ്പ് = പകർച്ചവ്യാധി മൂന്നാം ദിവസത്തിൽ ആരംഭിക്കുന്നു) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
 
-
 > **4 days on average to infecting someone else:** “The mean [serial] interval was 3.96 days (95% CI 3.53–4.39 days)” [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article)
-
+>
 > **5 days on average to feeling symptoms:** “The median incubation period was estimated to be 5.1 days (95% CI, 4.5 to 5.8 days)” [Lauer SA, Grantz KH, Bi Q, et al](https://annals.org/AIM/FULLARTICLE/2762808/INCUBATION-PERIOD-CORONAVIRUS-DISEASE-2019-COVID-19-FROM-PUBLICLY-REPORTED)
 
 ![](pics/timeline1.png)
@@ -378,11 +368,9 @@ How?
 
 [^dp3t_details]: To prevent "pranking" (people falsely claiming to be infected), the DP-3T Protocol requires that the hospital first give you a One-Time Passcode that lets you upload your messages.
 
-
 > False positives are a problem in both manual & digital contact tracing. Still, we can reduce false positives in 2 ways: 1) By notifying Bobs only if they heard, say, 30+ min worth of messages, not just one message in passing. And 2) If the app *does* think Bob's been exposed, it can refer Bob to a *manual* contact tracer, for an in-depth follow-up interview.
-
+>
 > For other issues like data bandwidth, source integrity, and other security issues, check out [the open-source DP-3T whitepapers!](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)
-
 
 ടി‌സി‌എൻ‌ പ്രോട്ടോക്കോൾ‌[^tcn], എം‌ഐ‌ടി PACT[^pact], എന്നിവയെപ്പോലുള്ള സമാന ടീമുകൾക്കൊപ്പം, സ്വകാര്യതയ്ക്ക് പ്രഥമ പരിഗണന നൽകുന്ന കോണ്ടാക്റ്റ് ട്രെയ്സിംഗ് ആൻഡ്രോയ്ഡ് / ഐ-ഓഎസിലേക്ക് നേരിട്ട് എത്തിക്കാൻ .[^gapple](ഗൂഗിളി / ആപ്പിളി - നെ വിശ്വസിക്കരുത് എന്നാണോ? കൊള്ളാം! ഈ സിസ്റ്റത്തിന്റെ ഭംഗിയെന്തെന്നാൽ ഇതിന് വിശ്വാസ്യത *ആവശ്യമില്ല* എന്നതാണ്!) താമസിയാതെ, നിങ്ങളുടെ പ്രാദേശിക പൊതുജനാരോഗ്യ ഏജൻസി നിങ്ങളോട് ഒരു അപ്ലിക്കേഷൻ ഡൗൺലോഡുചെയ്യാൻ ആവശ്യപ്പെട്ടേക്കാം. പൊതുവായി ലഭ്യമായ കോഡ് ഉപയോഗിക്കുന്നതും, സ്വകാര്യതയ്ക്ക് പ്രഥമ പരിഗണന നൽകുന്നതുമാണിതെങ്കിൽ, ദയവായി അത് ഇൻസ്റ്റാൾ ചെയ്യുക!
 
@@ -398,24 +386,20 @@ How?
 
 [^rant]: Lots of news reports – and honestly, many research papers – did not distinguish between "cases who showed no symptoms when we tested them" (pre-symptomatic) and "cases who showed no symptoms *ever*" (true asymptomatic). The only way you could tell the difference is by following up with cases later.
 
-
 > Which is what [this study](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article) did. (Disclaimer: "Early release articles are not considered as final versions.") In a call center in South Korea that had a COVID-19 outbreak, "only 4 (1.9%) remained asymptomatic within 14 days of quarantine, and none of their household contacts acquired secondary infections."
-
+>
 > So that means "true asymptomatics" are rare, and catching the disease from a true asymptomatic may be even rarer!
-
 
 *രോഗലക്ഷണമുള്ള* കേസുകൾ ഒറ്റപ്പെടുത്തുന്നത് R വില 40% വരെ കുറയ്ക്കും, കൂടാതെ അവരുടെ രോഗലക്ഷണം *വരുന്നതിനും/ ശേഷവുമുള്ള* കോൺടാക്റ്റുകളെ ക്വാറന്റൈൻ ചെയ്യുന്നത് R 50% വരെ കുറയ്ക്കും[^oxford]:
 
 [^oxford]: From the same Oxford study that first recommended apps to fight COVID-19: [Luca Ferretti & Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) See Figure 2. Assuming R<sub>0</sub> = 2.0, they found that:
 
-
-> * Symptomatics contribute R = 0.8 (40%)
-> * Pre-symptomatics contribute R = 0.9 (45%)
-> * Asymptomatics contribute R = 0.1 (5%, though their model has uncertainty and it could be much lower)
-> * Environmental stuff like doorknobs contribute R = 0.2 (10%)
-
+> -	Symptomatics contribute R = 0.8 (40%)
+> -	Pre-symptomatics contribute R = 0.9 (45%)
+> -	Asymptomatics contribute R = 0.1 (5%, though their model has uncertainty and it could be much lower)
+> -	Environmental stuff like doorknobs contribute R = 0.2 (10%)
+>
 > And add up the pre- & a-symptomatic contacts (45% + 5%) and you get 50% of R!
-
 
 <div class="sim">
         <iframe src="sim?stage=int-4a&format=calc" width="285" height="340"></iframe>
