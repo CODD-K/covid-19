@@ -3,10 +3,10 @@
 body{
 	margin: 0;
 	font-family: 'Manjari', Helvetica, Arial, sans-serif;
-	font-size: 15px;
-	font-weight: normal;
+	font-size: 12px;
+	font-weight: 400;
 	background: #ddd;
-	line-height: 15px;
+	line-height: 12px;
 }
 div{
 	-webkit-user-select: none;  /* Chrome all / Safari all */
@@ -63,7 +63,7 @@ div{
 	padding:10px;
 	border-radius: 10px;
 	border-bottom: 4px solid rgba(0,0,0,0.2);
-	font-size: 30px;
+	font-size: 20px;
 	cursor: pointer;
 }
 .big_button:hover{
