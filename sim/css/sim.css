@@ -3,10 +3,10 @@
 body{
 	margin: 0;
 	font-family: 'Manjari', Helvetica, Arial, sans-serif;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 400;
 	background: #ddd;
-	line-height: 12px;
+	line-height: 14px;
 }
 div{
 	-webkit-user-select: none;  /* Chrome all / Safari all */
