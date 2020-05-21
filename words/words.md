@@ -526,10 +526,10 @@ R<sub>0</sub> നമ്മൾ വിചാരിച്ചതിലും വള�
 (മാസ്കുകൾക്കായുള്ള / എതിരായ മറ്റ് വാദങ്ങൾ:[^mask_args])
 
 [^mask_args]: **"We need to save supplies for hospitals."** *Absolutely agreed.* But that's more of an argument for increasing mask production, not rationing. In the meantime, we can make cloth masks.
-
-**"They're hard to wear correctly."** It's also hard to wash your hands according to the WHO Guidelines – seriously, "Step 3) right palm over left dorsum"?! – but we still recommend handwashing, because imperfect is still better than nothing.
-
-**"It'll make people more reckless with handwashing & social distancing."** Sure, and safety belts make people ignore stop signs, and flossing makes people eat rocks. But seriously, we'd argue the opposite: masks are a *constant physical reminder* to be careful – and in East Asia, masks are also a symbol of solidarity!
+    
+    **"They're hard to wear correctly."** It's also hard to wash your hands according to the WHO Guidelines – seriously, "Step 3) right palm over left dorsum"?! – but we still recommend handwashing, because imperfect is still better than nothing.
+    
+    **"It'll make people more reckless with handwashing & social distancing."** Sure, and safety belts make people ignore stop signs, and flossing makes people eat rocks. But seriously, we'd argue the opposite: masks are a *constant physical reminder* to be careful – and in East Asia, masks are also a symbol of solidarity!
 
 മാസ്കുകൾക്ക് മാത്രം R < 1 ആക്കില്ല. പക്ഷേ, ഹാൻഡ് വാഷിംഗ്, "ടെസ്റ്റ്, ട്രേസ്, ഐസോലേറ്റ്" നമ്മളെ R = 1.10ലേക്ക് മാത്രമേ എത്തിക്കൂ, വെറും 1/3 ആളുകൾ മാസ്ക് ധരിക്കുന്നത് R < 1 നയിക്കും, വൈറസിനെ പിടിച്ച് കെട്ടിയിരിക്കുന്നു!
 
