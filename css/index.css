@@ -29,6 +29,10 @@ a:hover{
 	color: #ff8080;
 }
 
+h1, h2, h3, h4{
+    font-family: 'Manjari', Helvetica, Arial, sans-serif;
+}
+
 .sim{
 	width:100%;
 	background: #eee;
