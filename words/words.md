@@ -1,7 +1,7 @@
 <div class="section">
     <div>
         <iframe id="splash" width="960" height="480" src="banners/splash.html"></iframe>
-        <div style="top: 70px;font-size: 75px;font-weight: bold;">
+        <div class="heading">
             ഇനിയെന്ത് സംഭവിക്കും?
         </div>
         <div style="font-weight: 500;top: 140px;left: 10px;font-size: 29px;">
@@ -36,11 +36,10 @@
 
 [^timestamp]: ഈ ഫുട്നോട്ടുകൾ സൂചികകളും, ലിങ്കുകളും, അധികമായുള്ള കമന്ററികളും നൽകും. ഈ കമന്ററി പോലുള്ളവ!
 
-```
-**ഈ വിവരണം 2020 മേയ് മാസം ഒന്നിനു പ്രസിദ്ധീകരിച്ചതാണ്.** ഇതിലെ മിക്ക കാര്യങ്ങളും കാലഹരണപ്പെടാം, പക്ഷെ, ഈ വിവരണം 95% സാധ്യമായ ഭാവിയും വിവരിക്കുമെന്ന് ഞങ്ങൾക്കുറപ്പാണ്, എപ്പിഡെമിയോളജി 101 ഉപയോഗപ്രദമായിരിക്കുമെന്നും.
+    **ഈ വിവരണം 2020 മേയ് മാസം ഒന്നിനു പ്രസിദ്ധീകരിച്ചതാണ്.** ഇതിലെ മിക്ക കാര്യങ്ങളും കാലഹരണപ്പെടാം, പക്ഷെ, ഈ വിവരണം 95% സാധ്യമായ ഭാവിയും വിവരിക്കുമെന്ന് ഞങ്ങൾക്കുറപ്പാണ്, എപ്പിഡെമിയോളജി 101 ഉപയോഗപ്രദമായിരിക്കുമെന്നും.
 
-(Update May 15: Added citations for "1 in 20 of infected are hospitalized" and "0.5% of infected die")
-```
+    (Update May 15: Added citations for "1 in 20 of infected are hospitalized" and "0.5% of infected die")
+
 
 അപ്പോൾ ബെൽറ്റ് മുറുക്കൂ: നമ്മൾ അല്പം ടർബുലൻസ് നേരിടാൻ പോവുകയാണ്.
 
@@ -69,9 +68,9 @@
 
 [^caveats]: **ഓർമ്മിക്കുക: ഈ സിമുലേഷനുകളെല്ലാം പഠനാവശ്യത്തിനായി ലളിതമാക്കിയതാണ്.**
 
-> One simplification: When you tell this simulation "Infect 1 new person every X days", it's actually increasing # of infected by 1/X each day. Same for future settings in these simulations – "Recover every X days" is actually reducing # of infected by 1/X each day.
->
-> Those *aren't* exactly the same, but it's close enough, and for educational purposes it's less opaque than setting the transmission/recovery rates directly.
+    One simplification: When you tell this simulation "Infect 1 new person every X days", it's actually increasing # of infected by 1/X each day. Same for future settings in these simulations – "Recover every X days" is actually reducing # of infected by 1/X each day.
+    
+    Those *aren't* exactly the same, but it's close enough, and for educational purposes it's less opaque than setting the transmission/recovery rates directly.
 
 <div class="sim">
         <iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
@@ -93,7 +92,13 @@
         <iframe src="sim?stage=epi-2" width="800" height="540"></iframe>
 </div>
 
-ഇതാണ് "S-ആകൃതിയിലുള്ള" **ലോജിസ്റ്റിക് വളർച്ചാ കർവ്.** ചെറുതായി തുടങ്ങി, ഒരു വിസ്ഫോടനം സൃഷ്ടിച്ച്, അവസാാനം വളർച്ചയുടെ വേഗം കുറയുന്നു. പക്ഷെ, ഈ സിമുലേഷനും തെറ്റാണ്. രോഗബാധയുള്ള <icon i></icon> ആളുകൾ ക്രമേണ രോഗം പരത്തുന്ന അവസ്ഥയിൽ നിന്നും പിന്മാറും എന്ന കാര്യം നമ്മൾ ഇതിൽ വിട്ടുകളയുന്നു. അവർ പല രീതിയിൽ രോഗം പരത്തുന്ന അവസ്ഥയിൽ ഒഴിവാകും, 1) സൗഖ്യം പ്രാപിക്കുക വഴി, 2) ശ്വാസകോശത്തിനു തകരാറോടെ "സുഖമാകുക" വഴി, 3) മരണപ്പെടുക, എന്നിങ്ങനെ. കാര്യങ്ങൾ അല്പം ലളിതമാക്കാൻ, എല്ലാ <icon i></icon> സുഖമാകുമെന്ന് <icon r></icon> അനുമാനിക്കാം. (യഥാർത്ഥത്തിൽ കുറച്ച് പേർ മരണപ്പെടും.) <span class="nowrap"><icon r></icon>s</span> ഭാവിയിൽ രോഗം ബാധിക്കില്ലെന്നും, നമുക്ക് അനുമാനിക്കാം — *തൽക്കാലത്തേക്ക്!* — അതായത് അവർക്ക് ശേഷിക്കുന്ന ജീവിതകാലം മുഴുവൻ രോഗം ബാധിക്കില്ല. കോവിഡ്-19ന്റെ കാര്യത്തിൽ, നിങ്ങൾ, <icon i></icon> *ശരാശരി,* 10 ദിവസത്തേക്ക് അസുഖമുള്ളയാളായിരിക്കുമെന്ന് കണക്കാക്കപ്പെടുന്നു.[^infectiousness] അതിന്റെയർത്ഥം ചിലയാളുകൾ 10 ദിവസങ്ങൾക്കു മുന്നെയും, ചിലർ 10 ദിവസങ്ങൾക്ക് ശേഷമോ സുഖപ്പെടുമെന്നതാണ്. **സിമുലേഷൻ 100% <span class="nowrap"><icon i></icon>:</span>മായി *തുടങ്ങിയാൽ* ഇങ്ങിനെയാണത് കാണപ്പെടുക**
+ഇതാണ് "S-ആകൃതിയിലുള്ള" **ലോജിസ്റ്റിക് വളർച്ചാ കർവ്.** ചെറുതായി തുടങ്ങി, ഒരു വിസ്ഫോടനം സൃഷ്ടിച്ച്, അവസാാനം വളർച്ചയുടെ വേഗം കുറയുന്നു. 
+
+പക്ഷെ, ഈ സിമുലേഷനും തെറ്റാണ്. രോഗബാധയുള്ള <icon i></icon> ആളുകൾ ക്രമേണ രോഗം പരത്തുന്ന അവസ്ഥയിൽ നിന്നും പിന്മാറും എന്ന കാര്യം നമ്മൾ ഇതിൽ വിട്ടുകളയുന്നു. അവർ പല രീതിയിൽ രോഗം പരത്തുന്ന അവസ്ഥയിൽ ഒഴിവാകും, 1) സൗഖ്യം പ്രാപിക്കുക വഴി, 2) ശ്വാസകോശത്തിനു തകരാറോടെ "സുഖമാകുക" വഴി, 3) മരണപ്പെടുക, എന്നിങ്ങനെ. 
+
+കാര്യങ്ങൾ അല്പം ലളിതമാക്കാൻ, എല്ലാ <icon i></icon> സുഖമാകുമെന്ന് <icon r></icon> അനുമാനിക്കാം. (യഥാർത്ഥത്തിൽ കുറച്ച് പേർ മരണപ്പെടും.) <span class="nowrap"><icon r></icon>s</span> ഭാവിയിൽ രോഗം ബാധിക്കില്ലെന്നും, നമുക്ക് അനുമാനിക്കാം — *തൽക്കാലത്തേക്ക്!* — അതായത് അവർക്ക് ശേഷിക്കുന്ന ജീവിതകാലം മുഴുവൻ രോഗം ബാധിക്കില്ല. 
+
+കോവിഡ്-19ന്റെ കാര്യത്തിൽ, നിങ്ങൾ, <icon i></icon> *ശരാശരി,* 10 ദിവസത്തേക്ക് അസുഖമുള്ളയാളായിരിക്കുമെന്ന് കണക്കാക്കപ്പെടുന്നു.[^infectiousness] അതിന്റെയർത്ഥം ചിലയാളുകൾ 10 ദിവസങ്ങൾക്കു മുന്നെയും, ചിലർ 10 ദിവസങ്ങൾക്ക് ശേഷമോ സുഖപ്പെടുമെന്നതാണ്. **സിമുലേഷൻ 100% <span class="nowrap"><icon i></icon>:</span>മായി *തുടങ്ങിയാൽ* ഇങ്ങിനെയാണത് കാണപ്പെടുക**
 
 [^infectiousness]: “The median communicable period \[...\] was 9.5 days.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Yes, we know "median" is not the same as "average". For simplified educational purposes, close enough.
 
@@ -116,8 +121,11 @@
         <iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
 </div>
 
-ദാ, *ഇവിടെയാണ്* പ്രശസ്തമായ ആ കർവ് ഉണ്ടാകുന്നത്! ഇതൊരു ബെൽ കർവ് അല്ല, ഇതൊരു "ലോഗ്-നോർമൽ" കർവും അല്ല. ഇതിനു പ്രത്യേകിച്ച് പേരൊന്നുമില്ല. ഇത് പക്ഷെ നിങ്ങൾ ഒത്തിരിവട്ടം കണ്ടുകാണും, എല്ലായിടത്തും അടിച്ച് പരത്തുന്നതായി കണ്ടത് തന്നെ. ഇതാണ് **SIR മോഡൽ**,[^sir](icon s></icon>**S**usceptible (രോഗം ബാധിക്കാനിടയുള്ളവർ) <icon i></icon>**I**nfectious (രോഗമുള്ളവർ) <icon r></icon>**R**ecovered (സുഖമായവർ))  
-എപിഡെമിയോളജി 101ലെ *രണ്ടാമത്തെ* ഏറ്റവും പ്രധാനപ്പെട്ട കാര്യം: [^sir]: For more technical explanations of the SIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-sir.html#) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)
+ദാ, *ഇവിടെയാണ്* പ്രശസ്തമായ ആ കർവ് ഉണ്ടാകുന്നത്! ഇതൊരു ബെൽ കർവ് അല്ല, ഇതൊരു "ലോഗ്-നോർമൽ" കർവും അല്ല. ഇതിനു പ്രത്യേകിച്ച് പേരൊന്നുമില്ല. ഇത് പക്ഷെ നിങ്ങൾ ഒത്തിരിവട്ടം കണ്ടുകാണും, എല്ലായിടത്തും അടിച്ച് പരത്തുന്നതായി കണ്ടത് തന്നെ. 
+
+ഇതാണ് **SIR മോഡൽ**,[^sir](icon s></icon>**S**usceptible (രോഗം ബാധിക്കാനിടയുള്ളവർ) <icon i></icon>**I**nfectious (രോഗമുള്ളവർ) <icon r></icon>**R**ecovered (സുഖമായവർ))  
+എപിഡെമിയോളജി 101ലെ *രണ്ടാമത്തെ* ഏറ്റവും പ്രധാനപ്പെട്ട കാര്യം: 
+[^sir]: For more technical explanations of the SIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-sir.html#) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)
 
 ![](pics/sir.png)
 
@@ -134,8 +142,7 @@
 [^latent]: “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
 
 <b style='color:#ff4040'>ചുവപ്പ് <b style='color:#FF9393'>+ പിങ്ക്</b> കർവ്</b> *നിലവിലുള്ള* കേസുകൾ (രോഗമുള്ളവർ <icon i></icon> + സ്വീകർത്താക്കൾ <span class="nowrap"><icon e></icon>),</span><br>
-
-> <b style='color:#888'>ചാരനിറമുള്ള കർവ്</b> <em>മൊത്തം</em> കേസുകൾ (നിലവിലുള്ളവർ + സുഖപ്പെട്ടവർ <span class="nowrap"><icon r></icon>\):</span>
+<b style='color:#888'>ചാരനിറമുള്ള കർവ്</b> <em>മൊത്തം</em> കേസുകൾ (നിലവിലുള്ളവർ + സുഖപ്പെട്ടവർ <span class="nowrap"><icon r></icon>\):</span>
 
 <div class="sim">
         <iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
@@ -143,17 +150,35 @@
 
 വലിയ വ്യത്യാസമില്ല! എത്ര നാൾ ഒരാൾ <icon e></icon> സ്വീകർത്താവായി തുടരും എന്നത് <icon e></icon>ഉം-<icon i></icon> തമ്മിലുള്ള അനുപാതം മാറ്റുന്നു, കൂടാതെ നിലവിലുള്ള കേസുകൾ അതിന്റെ *ഉന്നതിയിലെത്തുമ്പോൾ*... എന്നാൽ ആ കൊടുമുടിയുടെ *ഉയരവും*, അവസാനം വരെ ആകെയുള്ള രോഗികളുടെ എണ്ണവും, അങ്ങിനെ തന്നെ തുടരുന്നു.
 
-എന്തു കൊണ്ടാണത്? കാരണം എപിഡെമിയോളജി 101ന്റെ ഏറ്റവും *പ്രധാനപ്പെട്ട* ആശയം എന്താണെന്ന് വച്ചാൽ ![](pics/r.png) ഇത് "റിപ്രൊഡക്ഷൻ നമ്പർ" എന്നതിന്റെ ചുരുക്കമാണ്. ഇത് <icon i></icon> ഒരാൾ സുഖം പ്രാപിക്കുന്നതിന് (അല്ലെങ്കിൽ മരിക്കുന്നതിന്) മുന്നെ ശരാശരി എത്രയാളുകൾക്ക് രോഗം പകർന്നു കൊടുക്കും എന്നതിന്റെ എണ്ണമാണ്. ![](pics/r2.png) **R** ഒരു പകരച്ചവ്യാധിക്കിടെ മാറിക്കൊണ്ടേയിരിക്കും, നമുക്ക് രോഗ പ്രതിരോധശേഷി ലഭിക്കുന്നതിലൂടെയും ഇടപെടലുകളിലൂടെയും.
+എന്തു കൊണ്ടാണത്? കാരണം എപിഡെമിയോളജി 101ന്റെ ഏറ്റവും *പ്രധാനപ്പെട്ട* ആശയം എന്താണെന്ന് വച്ചാൽ:
+
+![](pics/r.png) 
+
+ഇത് "റിപ്രൊഡക്ഷൻ നമ്പർ" എന്നതിന്റെ ചുരുക്കമാണ്. ഇത് <icon i></icon> ഒരാൾ സുഖം പ്രാപിക്കുന്നതിന് (അല്ലെങ്കിൽ മരിക്കുന്നതിന്) മുന്നെ ശരാശരി എത്രയാളുകൾക്ക് രോഗം പകർന്നു കൊടുക്കും എന്നതിന്റെ എണ്ണമാണ്. 
+
+![](pics/r2.png) 
+
+**R** ഒരു പകരച്ചവ്യാധിക്കിടെ മാറിക്കൊണ്ടേയിരിക്കും, നമുക്ക് രോഗ പ്രതിരോധശേഷി ലഭിക്കുന്നതിലൂടെയും ഇടപെടലുകളിലൂടെയും.
 
 **R<sub>0</sub>**(ആർ-നോട്ട് എന്നുച്ചരിക്കും) എന്നാൽ ഒരു വ്യാധിയുടെ തുടക്കത്തിൽ, പ്രതിരോധശേഷിയോ മറ്റിടപെടലുകളോ ഇല്ലാത്ത ഘട്ടത്തിലുള്ള R<sub>0</sub> ഒരു വൈറസിന്റെ ശക്തിയെന്തെന്ന സൂചന നൽകുന്ന സംഖ്യയാണ്, പക്ഷേ ഇത് ഓരോ സ്ഥലങ്ങളിലും വ്യത്യസ്തമായിരിക്കും. ഉദാഹരണത്തിന്, R<sub>0</sub> ജനസാന്ദ്രത കൂടിയ നഗരങ്ങളിൽ നിന്ന് വ്യത്യസ്തമായിരിക്കും ഗ്രാമങ്ങളിൽ.
 
 (മിക്ക വാർത്താ ലേഖനങ്ങളും – ചില ഗവേഷണ പ്രബന്ധങ്ങൾ പോലും! – R-ഉം R<sub>0</sub>-ഉം തമ്മിൽ കൂട്ടിക്കുഴയ്ക്കും. വീണ്ടൂം, ശാസ്ത്രം അല്പം പ്രയാസമുള്ളതാണ്)
 
-"സീസണുകളിൽ" ഉണ്ടാവുന്ന ഫ്ലൂ പനിയുടെ R<sub>0</sub> ഏകദേശം 1.28[^r0_flu]. അതായത്, ഒരു ഫ്ലൂ പകർച്ചപ്പനി പൊട്ടിപ്പുറപ്പെടുന്ന ഘട്ടത്തിൽ, ഒരു <icon i></icon> *ശരാശരി* 1.28 ആളുകൾക്ക് രോഗം പകർന്നു കൊടുക്കും. (ഇതൊരു പൂർണ്ണ സംഖ്യയല്ലാത്തതിനാൽ വിചിത്രമായി തോന്നുന്നുണ്ടെങ്കിൽ, ഓർക്കുക ഒരു അമ്മയ്ക്ക് "ശരാശരി" 2.4 കുട്ടികളുണ്ടാവും. ഇതിന്റെ അർത്ഥം അരക്കുട്ടിയുണ്ടാവുമെന്നല്ല - പത്ത് അമ്മമാരുള്ള ഒരു സ്ഥലത്ത് ശരാശരി 24 കുട്ടികളുണ്ടാവാം). [^r0_flu]: “The median R value for seasonal influenza was 1.28 (IQR: 1.19–1.37)” [Biggerstaff, M., Cauchemez, S., Reed, C. et al.](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480) കോവിഡ്-19ന്റെ R<sub>0</sub> 2.2 ആണെന്ന് കണക്കാക്കപ്പെടുന്നു,[^r0_covid] എന്നിരിക്കിലും *ഇനിയും പൂർണ്ണമല്ലാത്ത* ചില പഠനങ്ങൾ ഇത് വുഹാനിൽ 5.7(!) ആയിരുന്നെന്നും പറയുന്നു.[^r0_wuhan] [^r0_covid]: “We estimated the basic reproduction number R0 of 2019-nCoV to be around 2.2 (90% high density interval: 1.4–3.8)” [Riou J, Althaus CL.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/)
+"സീസണുകളിൽ" ഉണ്ടാവുന്ന ഫ്ലൂ പനിയുടെ R<sub>0</sub> ഏകദേശം 1.28[^r0_flu]. അതായത്, ഒരു ഫ്ലൂ പകർച്ചപ്പനി പൊട്ടിപ്പുറപ്പെടുന്ന ഘട്ടത്തിൽ, ഒരു <icon i></icon> *ശരാശരി* 1.28 ആളുകൾക്ക് രോഗം പകർന്നു കൊടുക്കും. (ഇതൊരു പൂർണ്ണ സംഖ്യയല്ലാത്തതിനാൽ വിചിത്രമായി തോന്നുന്നുണ്ടെങ്കിൽ, ഓർക്കുക ഒരു അമ്മയ്ക്ക് "ശരാശരി" 2.4 കുട്ടികളുണ്ടാവും. ഇതിന്റെ അർത്ഥം അരക്കുട്ടിയുണ്ടാവുമെന്നല്ല - പത്ത് അമ്മമാരുള്ള ഒരു സ്ഥലത്ത് ശരാശരി 24 കുട്ടികളുണ്ടാവാം). 
 
-[^r0_wuhan]: “we calculated a median R0 value of 5.7 (95% CI 3.8–8.9)” [Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.](https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article) നമ്മുടെ സിമുലേഷനുകളിൽ – *തുടക്കത്തിലും ശരാശരിയിലും* – 10 ദിവസത്തിൽ, ഒരു <icon i></icon> ഓരോ 4 ദിവസത്തിലും മറ്റൊരാൾക്ക് രോഗം പകരുന്നു. "4 ദിവസങ്ങൾ" എന്നത് "10 ദിവസങ്ങൾ" ആവുമ്പോൾ രണ്ടര ഇരട്ടിയാവുന്നു. അതായത് – *തുടക്കത്തിൽ ശരാശരി* – ഓരോ <icon i></icon> 2.5 ആളുകൾക്ക് രോഗം പകർന്നു കൊടുക്കുന്നു. അതിനാൽ, R<sub>0</sub> = 2.5. (caveats:[^r0_caveats_sim])
+[^r0_flu]: “The median R value for seasonal influenza was 1.28 (IQR: 1.19–1.37)” [Biggerstaff, M., Cauchemez, S., Reed, C. et al.](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480) ക
 
-[^r0_caveats_sim]: ഇതിൽ നമ്മൾ ഒരാൾ തനിക്ക് "രോഗം പകരാൻ കഴിയുന്ന കാലം" മുഴുവൻ ഒരേ ശക്തിയിൽ അത് ചെയ്യുന്നു എന്ന് നമ്മൾ അനുമാനിക്കുന്നു. വീണ്ടൂം, നമ്മൾ കാര്യം മനസ്സിലാക്കാനായി ലളിതമാക്കി. **ഈ R<sub>0</sub> കാൽക്കുലേറ്റർ ഉപയോഗിച്ച് നോക്കൂ, R<sub>0</sub> എങ്ങിനെയാണ് രോഗം സുഖമാകാനും, പുതിയതായി രോഗം ബാധിക്കാനുമെടൂക്കുന്ന കാലയളവുകളുമായി ബന്ധപ്പെട്ടിരിക്കുന്നതെന്ന് മനസ്സിലാകും:**
+ോവിഡ്-19ന്റെ R<sub>0</sub> 2.2 ആണെന്ന് കണക്കാക്കപ്പെടുന്നു,[^r0_covid] എന്നിരിക്കിലും *ഇനിയും പൂർണ്ണമല്ലാത്ത* ചില പഠനങ്ങൾ ഇത് വുഹാനിൽ 5.7(!) ആയിരുന്നെന്നും പറയുന്നു.[^r0_wuhan] 
+
+[^r0_covid]: “We estimated the basic reproduction number R0 of 2019-nCoV to be around 2.2 (90% high density interval: 1.4–3.8)” [Riou J, Althaus CL.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/)
+
+[^r0_wuhan]: “we calculated a median R0 value of 5.7 (95% CI 3.8–8.9)” [Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.](https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article) 
+
+നമ്മുടെ സിമുലേഷനുകളിൽ – *തുടക്കത്തിലും ശരാശരിയിലും* – 10 ദിവസത്തിൽ, ഒരു <icon i></icon> ഓരോ 4 ദിവസത്തിലും മറ്റൊരാൾക്ക് രോഗം പകരുന്നു. "4 ദിവസങ്ങൾ" എന്നത് "10 ദിവസങ്ങൾ" ആവുമ്പോൾ രണ്ടര ഇരട്ടിയാവുന്നു. അതായത് – *തുടക്കത്തിൽ ശരാശരി* – ഓരോ <icon i></icon> 2.5 ആളുകൾക്ക് രോഗം പകർന്നു കൊടുക്കുന്നു. അതിനാൽ, R<sub>0</sub> = 2.5. (caveats:[^r0_caveats_sim])
+
+[^r0_caveats_sim]: ഇതിൽ നമ്മൾ ഒരാൾ തനിക്ക് "രോഗം പകരാൻ കഴിയുന്ന കാലം" മുഴുവൻ ഒരേ ശക്തിയിൽ അത് ചെയ്യുന്നു എന്ന് നമ്മൾ അനുമാനിക്കുന്നു. വീണ്ടൂം, നമ്മൾ കാര്യം മനസ്സിലാക്കാനായി ലളിതമാക്കി. 
+
+**ഈ R<sub>0</sub> കാൽക്കുലേറ്റർ ഉപയോഗിച്ച് നോക്കൂ, R<sub>0</sub> എങ്ങിനെയാണ് രോഗം സുഖമാകാനും, പുതിയതായി രോഗം ബാധിക്കാനുമെടൂക്കുന്ന കാലയളവുകളുമായി ബന്ധപ്പെട്ടിരിക്കുന്നതെന്ന് മനസ്സിലാകും:**
 
 <div class="sim">
         <iframe src="sim?stage=epi-6a&format=calc" width="285" height="255"></iframe>
@@ -173,25 +198,37 @@
         <iframe src="sim?stage=epi-7" width="800" height="540"></iframe>
 </div>
 
-**കുറിപ്പ്: ആകെയുള്ള കേസുകൾ ഹെർഡ് ഇമ്മ്യൂണിറ്റ് പരിധിയിൽ *നിൽക്കുന്നില്ല*, പകരം അതും കഴിഞ്ഞ് കുതിക്കുന്നു!** ഇപ്പോഴുള്ള കേസുകൾ അതിന്റെ *കൃത്യം* ഉന്നതിയിലെത്തുമ്പോഴാണ് ആകെയുള്ള കേസുകൾ ഈ പരിധി ലംഘിക്കുന്നത്. (ഇത് നിങ്ങൾ എന്ത് ചെയ്താലും മാറില്ല – ഒന്ന് ശ്രമിച്ച് നോക്കൂ!) ഇതിനു കാരണം, ഹെർഡ് ഇമ്മ്യൂണിറ്റി പരിധിയേക്കാൾ കൂടുതൽ <span class="nowrap">non-<icon s></icon>s</span> അല്ലാത്തവർ ഉള്ളപ്പോൾ, നമുക്ക് R < 1. അങ്ങിനെയല്ലാത്തപ്പോൾ R < 1, അതായത് പുതിയ കേസുകളുടെ വളർച്ച കുറഞ്ഞ്: ഒരു ഉന്നതിയിലെത്തുന്നു. **ഈ വിവരണത്തിൽ നിന്ന് ഒരു പാഠം നിങ്ങൾക്ക് ഉൾക്കൊള്ളണമെങ്കിൽ, അതിതാണ്** – ഇത് വളരെ സങ്കീർണ്ണമായ ഒരു ചിത്രമായതിനാൽ അത് സ്വാംശീകരിക്കാൻ അല്പം സമയമെടൂത്തോളൂ: ![](pics/r3.png) **ഇതിന്റെയർത്ഥം: കോവിഡ്-19നെ തടഞ്ഞു നിർത്താൻ നമ്മൾ എല്ലാ പകർച്ചയേയുമെന്നല്ല, അതിനടുത്ത് പോലും എണ്ണത്തിനടുത്ത് പോലും എത്തേണ്ട!**
+**കുറിപ്പ്: ആകെയുള്ള കേസുകൾ ഹെർഡ് ഇമ്മ്യൂണിറ്റ് പരിധിയിൽ *നിൽക്കുന്നില്ല*, പകരം അതും കഴിഞ്ഞ് കുതിക്കുന്നു!** ഇപ്പോഴുള്ള കേസുകൾ അതിന്റെ *കൃത്യം* ഉന്നതിയിലെത്തുമ്പോഴാണ് ആകെയുള്ള കേസുകൾ ഈ പരിധി ലംഘിക്കുന്നത്. (ഇത് നിങ്ങൾ എന്ത് ചെയ്താലും മാറില്ല – ഒന്ന് ശ്രമിച്ച് നോക്കൂ!) 
+
+ഇതിനു കാരണം, ഹെർഡ് ഇമ്മ്യൂണിറ്റി പരിധിയേക്കാൾ കൂടുതൽ <span class="nowrap">non-<icon s></icon>s</span> അല്ലാത്തവർ ഉള്ളപ്പോൾ, നമുക്ക് R < 1. അങ്ങിനെയല്ലാത്തപ്പോൾ R < 1, അതായത് പുതിയ കേസുകളുടെ വളർച്ച കുറഞ്ഞ്: ഒരു ഉന്നതിയിലെത്തുന്നു. 
+
+**ഈ വിവരണത്തിൽ നിന്ന് ഒരു പാഠം നിങ്ങൾക്ക് ഉൾക്കൊള്ളണമെങ്കിൽ, അതിതാണ്** – ഇത് വളരെ സങ്കീർണ്ണമായ ഒരു ചിത്രമായതിനാൽ അത് സ്വാംശീകരിക്കാൻ അല്പം സമയമെടൂത്തോളൂ: 
+
+![](pics/r3.png) 
+
+**ഇതിന്റെയർത്ഥം: കോവിഡ്-19നെ തടഞ്ഞു നിർത്താൻ നമ്മൾ എല്ലാ പകർച്ചയേയുമെന്നല്ല, അതിനടുത്ത് പോലും എണ്ണത്തിനടുത്ത് പോലും എത്തേണ്ട!**
 
 ഇതൊരു വിരോധാഭാസമായി തോന്നാം. കോവിഡ്-19 വളരെയധികം പകരുന്ന ഒന്നാണ്, എന്നാൽ അതിനെ തടഞ്ഞു നിർത്താൻ, നമുക്ക് 60% ശതമാനത്തിലധികം രോഗപ്പകർച്ചകൾ "മാത്രം" തടഞ്ഞാൽ മതിയാകും. 60%?! ഒരു സ്കൂൾ പരീക്ഷയ്ക്കുള്ള ഗ്രേഡാണെങ്കിൽ, ഒരു D- ആണത്. പക്ഷെ R<sub>0</sub> = 2.5 ആയിരിക്കുമ്പോൾ, അതിന്റെ 61% തടഞ്ഞാൽ നമുക്ക് R = 0.975 എന്ന് ലഭിക്കും, അതായത് R < 1, വൈറസിനെ പിടിച്ച് കെട്ടി! (ശരിയായ ഫോർമുല:[^exact_formula])
 
 [^exact_formula]: ഓർമ്മിക്കുക R = R<sub>0</sub> * നടക്കുന്ന വ്യാപനത്തിന്റെ അനുപാതം. ഇതോടൊപ്പം ഓർക്കുക = 1 - വ്യാപനത്തിന്റെ അനുപാതം *തടഞ്ഞത്*
 
-> Therefore, to get R < 1, you need to get R<sub>0</sub> * TransmissionsAllowed < 1.
->
-> Therefore, TransmissionsAllowed < 1/R<sub>0</sub>
->
-> Therefore, 1 - TransmissionsStopped < 1/R<sub>0</sub>
->
-> Therefore, TransmissionsStopped > 1 - 1/R<sub>0</sub>
->
-> Therefore, you need to stop more than **1 - 1/R<sub>0</sub>** of transmissions to get R < 1 and contain the virus!
+    Therefore, to get R < 1, you need to get R<sub>0</sub> * TransmissionsAllowed < 1.
+    
+    Therefore, TransmissionsAllowed < 1/R<sub>0</sub>
+    
+    Therefore, 1 - TransmissionsStopped < 1/R<sub>0</sub>
+    
+    Therefore, TransmissionsStopped > 1 - 1/R<sub>0</sub>
+    
+    Therefore, you need to stop more than **1 - 1/R<sub>0</sub>** of transmissions to get R < 1 and contain the virus!
 
 ![](pics/r4.png) (ഞങ്ങളൂടെ സിമുലേഷനിലെ R<sub>0</sub> വിലയോ മറ്റേതെങ്കിലും സംഖ്യയോ വളരെ കുറവോ, കൂടുതലോ ആണെന്ന് നിങ്ങൾക്ക് അഭിപ്രായമുണ്ടെങ്കിൽ, അത് വളരെ നല്ല കാര്യമാണ്. നിങ്ങൾ ഞങ്ങളുടെ നിഗമനങ്ങളെ ചാലഞ്ച് ചെയ്യുകയാണ്! ഈ വിവരണത്തിന്റെ അവസാനം ഒരു "സാൻഡ്ബോക്സ് മോഡ്" ഉണ്ട്, അവിടെ നിങ്ങൾക്ക് *സ്വന്തം* സംഖ്യകൾ ചേർക്കാം, എന്നിട്ട് സിമുലേറ്റ് ചെയ്ത് എന്ത് സംഭവിക്കുമെന്ന് നോക്കാം)
 
-നിങ്ങൾ കേട്ടിട്ടുള്ള *എല്ലാ* കോവിഡ്-19 ഇടപെടലുകളും – കൈ കഴുകൽ, സാമൂഹ്യ/ശാരീരിക അകലം പാലിക്കൽ, ലോക്ക്ഡൗണുകൾ, സ്വയം-ഒറ്റപ്പെടൽ, കോണ്ടാക്ട് ട്രേസിങ്ങ്, ക്വാറന്റൈൻ ചെയ്യുന്നത്, മുഖാവരണങ്ങൾ, എന്നിങ്ങനെ "ഹെർഡ് ഇമ്മ്യൂണിറ്റി" വരെ – അവ *എല്ലാം* ചെയ്യുന്നത് ഒരേ കാര്യമാണ്: R < 1 ആക്കുക. അങ്ങിനെയെങ്കിൽ ഇപ്പോൾ, നമുക്ക് "എപിഡെപിക് ഫ്ലൈറ്റ് സിമുലേറ്റർ" ഇക്കാര്യം മനസ്സിലാക്കാൻ ഉപയോഗിച്ചാലോ: എങ്ങിനെ നമ്മുടെ **മാനസികാരോഗ്യവും, സാമ്പത്തികാരോഗ്യവും പരിപാലിക്കപ്പെടുന്ന** വിധത്തിൽ
+നിങ്ങൾ കേട്ടിട്ടുള്ള *എല്ലാ* കോവിഡ്-19 ഇടപെടലുകളും – കൈ കഴുകൽ, സാമൂഹ്യ/ശാരീരിക അകലം പാലിക്കൽ, ലോക്ക്ഡൗണുകൾ, സ്വയം-ഒറ്റപ്പെടൽ, കോണ്ടാക്ട് ട്രേസിങ്ങ്, ക്വാറന്റൈൻ ചെയ്യുന്നത്, മുഖാവരണങ്ങൾ, എന്നിങ്ങനെ "ഹെർഡ് ഇമ്മ്യൂണിറ്റി" വരെ – അവ *എല്ലാം* ചെയ്യുന്നത് ഒരേ കാര്യമാണ്: 
+
+R < 1 ആക്കുക. 
+
+അങ്ങിനെയെങ്കിൽ ഇപ്പോൾ, നമുക്ക് "എപിഡെപിക് ഫ്ലൈറ്റ് സിമുലേറ്റർ" ഇക്കാര്യം മനസ്സിലാക്കാൻ ഉപയോഗിച്ചാലോ: എങ്ങിനെ നമ്മുടെ **മാനസികാരോഗ്യവും, സാമ്പത്തികാരോഗ്യവും പരിപാലിക്കപ്പെടുന്ന** വിധത്തിൽ
 
 ഒരു എമർജൻസി ലാൻഡിങ്ങിനു തയ്യാറെടുത്തോളൂ...
 
@@ -204,133 +241,143 @@
 
 ...വളരെ മോശമായേനെ. നമ്മൾ ഒഴിവാക്കിയ മറ്റു സാദ്ധ്യതകൾ ഇവയൊക്കെയാണ്:
 
-###സീൻ 0: ഒന്നും ചെയ്യാതിരിക്കുക ോവിഡ്-19 ബാധിച്ച ഒരു പത്തിരുപതാളുകൾ ഐസിയുകളിൽ പ്രവേശിക്കേണ്ടി വരും.[^icu_covid] അമേരിക്ക പോലുള്ള ഒരു സമ്പന്ന രാജ്യത്ത്, 3400 ആളുകൾക്ക് ഒരു ഐസിയു വച്ചാണുള്ളത്.[^icu_us] അതായത്, അമേരിക്കക്ക 3400 ആളുകളിൽ 20 ആളുകൾക്ക് *ഒരേ സമയം* രോഗം ബാധിക്കുന്നത് കൈകാര്യം ചെയ്യാൻ കഴിയും – അല്ലെങ്കിൽ, ജനസംഖ്യയുടെ 0.6% ശതമാനത്തിന് രോഗം വരുന്നത്. [^icu_covid]: **[UPDATED MAY 15]** Many of you rightly pointed out that our previous citation for "**1 in 20** need hospitalization" was based off old USA data on *confirmed* cases – which was way lower than the *real* number of cases, due to lack of tests.
+### സീൻ 0: ഒന്നും ചെയ്യാതിരിക്കുക 
 
-> So, let's look at the country with the *most* tests per capita: Iceland. [On May 15th, 2020](https://web.archive.org/web/20200516012656/https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Iceland), they had 115 hospitalized among 1802 confirmed cases ≈ 6.4% hospitalization rate, or **1 in 16**.
->
-> [A more recent study of COVID-19 in France](https://science.sciencemag.org/content/early/2020/05/12/science.abc3517) – using not just official confirmed cases but also antibody test data – found that “3.6% of infected individuals are hospitalized”. Or, **1 in 28.**
->
-> Overall, there's a lot of uncertainty, but "1 in 20" is roughly close. Besides, for the rest of these simulations, we *triple* hospital capacity – so, even if "1 in 20" is three times too high, the point still stands.
->
-> Old citation: ~~["Percentage of COVID-19 cases in the United States from February 12 to March 16, 2020 that required intensive care unit (ICU) admission, by age group"](https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/). Between 4.9% to 11.5% of *all* COVID-19 cases required ICU. Generously picking the lower range, that's 5% or 1 in 20. Note that this total is specific to the US's age structure, and will be higher in countries with older populations, lower in countries with younger populations.~~
+കോവിഡ്-19 ബാധിച്ച ഒരു പത്തിരുപതാളുകൾ ഐസിയുകളിൽ പ്രവേശിക്കേണ്ടി വരും.[^icu_covid] അമേരിക്ക പോലുള്ള ഒരു സമ്പന്ന രാജ്യത്ത്, 3400 ആളുകൾക്ക് ഒരു ഐസിയു വച്ചാണുള്ളത്.[^icu_us] അതായത്, അമേരിക്കക്ക 3400 ആളുകളിൽ 20 ആളുകൾക്ക് *ഒരേ സമയം* രോഗം ബാധിക്കുന്നത് കൈകാര്യം ചെയ്യാൻ കഴിയും – അല്ലെങ്കിൽ, ജനസംഖ്യയുടെ 0.6% ശതമാനത്തിന് രോഗം വരുന്നത്. 
 
-[^icu_us]: “Number of ICU beds = 96,596”. From [the Society of Critical Care Medicine](https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) USA Population was 328,200,000 in 2019. 96,596 out of 328,200,000 = roughly 1 in 3400. ഇനിയിത് *മൂന്നിരട്ടിയായി* 2% ആയാൽ, *നമ്മൾ ഒന്നും ചെയ്യാതെയിരുന്നാൽ* ഇതായിരിക്കും സംഭവിച്ചിട്ടുണ്ടാവുക:
+[^icu_covid]: **[UPDATED MAY 15]** Many of you rightly pointed out that our previous citation for "**1 in 20** need hospitalization" was based off old USA data on *confirmed* cases – which was way lower than the *real* number of cases, due to lack of tests.
+    
+    So, let's look at the country with the *most* tests per capita: Iceland. [On May 15th, 2020](https://web.archive.org/web/20200516012656/https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Iceland), they had 115 hospitalized among 1802 confirmed cases ≈ 6.4% hospitalization rate, or **1 in 16**.
+    
+    [A more recent study of COVID-19 in France](https://science.sciencemag.org/content/early/2020/05/12/science.abc3517) – using not just official confirmed cases but also antibody test data – found that “3.6% of infected individuals are hospitalized”. Or, **1 in 28.**
+    
+    Overall, there's a lot of uncertainty, but "1 in 20" is roughly close. Besides, for the rest of these simulations, we *triple* hospital capacity – so, even if "1 in 20" is three times too high, the point still stands.
+    
+    Old citation: ~~["Percentage of COVID-19 cases in the United States from February 12 to March 16, 2020 that required intensive care unit (ICU) admission, by age group"](https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/). Between 4.9% to 11.5% of *all* COVID-19 cases required ICU. Generously picking the lower range, that's 5% or 1 in 20. Note that this total is specific to the US's age structure, and will be higher in countries with older populations, lower in countries with younger populations.~~
+
+[^icu_us]: “Number of ICU beds = 96,596”. From [the Society of Critical Care Medicine](https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) USA Population was 328,200,000 in 2019. 96,596 out of 328,200,000 = roughly 1 in 3400. 
+
+ഇനിയിത് *മൂന്നിരട്ടിയായി* 2% ആയാൽ, *നമ്മൾ ഒന്നും ചെയ്യാതെയിരുന്നാൽ* ഇതായിരിക്കും സംഭവിച്ചിട്ടുണ്ടാവുക:
 
 <div class="sim">
         <iframe src="sim?stage=int-1&format=lines" width="800" height="540"></iframe>
 </div>
 
-ഒട്ടും നല്ലതല്ല. That's what [the March 16 Imperial College report](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) found: do nothing, and we run out of ICUs, with more than 80% of the population getting infected. (remember: total cases *overshoots* herd immunity)
+ഒട്ടും നല്ലതല്ല. 
 
-Even if only 0.5% of infected die[^ifr] – a generous assumption when there's no more ICUs – in a large country like the US, with 300 million people, 0.5% of 80% of 300 million = still 1.2 million dead... *IF we did nothing.*
+ഇതാണ് [മാർച്ച് 16-ലെ ഇമ്പീരിയൽ കോളേജ് റിപ്പോർട്ട്](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) കണ്ടെത്തിയത്: ഒന്നും ചെയ്യാതിരുന്നാൽ, നമ്മൾ ഐസിയുകൾ നിറഞ്ഞു കവിഞ്ഞ്, 80% അധികം ജനങ്ങൾക്ക് രോഗം ബാധിക്കുന്ന അവസ്ഥയിലെത്തും. (ഓർമ്മിക്കുക: മൊത്തം കേസുകൾ ഹെർഡ് ഇമ്മ്യൂണിറ്റി പരിധിയും കഴിഞ്ഞ് *കുതിക്കും*)
+
+ഒരു 0.5% രോഗബാധിതർ മരണമടഞ്ഞാൽ പോലും[^ifr] – കൂടുതൽ ഐസിയുകൾ ലഭ്യമല്ല എന്ന ഊഹം വച്ച് – ഏകദേശം 30 കോടി ജനങ്ങളുള്ള അമേരിക്ക പോലുള്ള ഒരു രാജ്യത്ത്, 30 കോടിയുടെ 80 ശതമാനത്തിന്റെ 0.5% = 12 ലക്ഷം ആളുകൾ മരണമറയും... *നമ്മൾ ഒന്നും ചെയ്തില്ലെങ്കിൽ.*
 
 [^ifr]: **[UPDATED MAY 15]** [Researchers in Indiana, USA](https://news.iu.edu/stories/2020/05/iupui/releases/13-preliminary-findings-impact-covid-19-indiana-coronavirus.html) did a random-sample test of the population, and found an infection-fatality rate (IFR) of 0.58%.
 
-(Lots of news & social media reported "80% will be infected" *without* "IF WE DO NOTHING". Fear was channelled into clicks, not understanding. *Sigh.*\)
+(ധാരാളം മാധ്യമങ്ങളൂം; നവ മാധ്യമങ്ങളൂം "80% ആളുകൾക്ക് രോഗം ബാധിക്കും" എന്നൊക്കെ "നമ്മൾ ഒന്നും ചെയ്തില്ലെങ്കിൽ" *എന്ന് ചേർക്കാതെ* തട്ടിവിട്ടിരുന്നു. ഭീതിയെ ക്ലിക്കുകളിലേക്ക് നയിക്കുന്നു, മനസ്സിലാക്കാനുള്ള ശ്രമത്തിലേക്കല്ല. *ഹാ.*
 
-###Scenario 1: Flatten The Curve / Herd Immunity
+### സീൻ 1: കർവിനെ പരത്തൂ / ഹെർഡ് ഇമ്മ്യൂണിറ്റി
 
-The "Flatten The Curve" plan was touted by every public health organization, while the United Kingdom's original "herd immunity" plan was universally booed. They were *the same plan.* The UK just communicated theirs poorly.[^yong]
+"കർവിനെ പരത്തൂ" പദ്ധതി എല്ലാ പൊതുജന ആരോഗ്യ സംഘടനകളൂം വിളിച്ച് പറഞ്ഞപ്പോൾ, യുകെയിലെ "ഹെർഡ് ഇമ്മ്യൂണിറ്റി" പദ്ധതിയെ ലോകം മുഴുവൻ കൂക്കി വിളിച്ചു. രണ്ടൂം *ഒരേ പദ്ധതിയായിരുന്നു.* യുകെ സർക്കാരത് വിളിച്ച് പറഞ്ഞ രീതി പാളിപ്പോയി.[^yong]
 
 [^yong]: “He says that the actual goal is the same as that of other countries: flatten the curve by staggering the onset of infections. As a consequence, the nation may achieve herd immunity; it’s a side effect, not an aim. [...] The government’s actual coronavirus action plan, available online, doesn’t mention herd immunity at all.”
 
-> From a [The Atlantic article by Ed Yong](https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/)
+    From a [The Atlantic article by Ed Yong](https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/)
 
-Both plans, though, had a literally fatal flaw.
+എങ്കിലും, രണ്ട് പദ്ധതികൾക്കും ഒരു പ്രധാന പാളിച്ചയുണ്ടായിരുന്നു.
 
-First, let's look at the two main ways to "flatten the curve": handwashing & physical distancing.
+ആദ്യം, നമുക്ക് "കർവിനെ പരത്തൂ" പദ്ധതിയുടെ രണ്ട് മാർഗ്ഗങ്ങളെ നോക്കാം: കൈ കഴുകൽ, ശാരീരിക അകലം പാലിക്കൽ.
 
-Increased handwashing cuts flus & colds in high-income countries by ~25%[^handwashing], while the city-wide lockdown in London cut close contacts by ~70%[^london]. So, let's assume handwashing can reduce R by *up to* 25%, and distancing can reduce R by *up to* 70%:
+ധാരാളമായി കൈ കഴുകുന്നത് ഉയർന്ന വരുമാനമുള്ള രാജ്യങ്ങളിൽ പനിയും, ജലദോഷവുമൊക്കെ ഏകദേശം 25% കണ്ടു കുറയ്ക്കും[^handwashing], അതേ സമയം ലണ്ടൻ നഗരത്തിലെമ്പാടുമുള്ള ലോക്ക്ഡൗൺ സമ്പർക്കങ്ങൾ 70% കണ്ട് കുറച്ചു.[^london]. അപ്പോൾ, കൈ കഴുകുന്നത് R വില 25% *വരെയും,* അകലം പാലിക്കുന്നത് R വില 70% *വരെയും* കുറയ്ക്കുമെന്ന് അനുമാനിച്ചാൽ:
 
 [^handwashing]: “All eight eligible studies reported that handwashing lowered risks of respiratory infection, with risk reductions ranging from 6% to 44% [pooled value 24% (95% CI 6–40%)].” We rounded up the pooled value to 25% in these simulations for simplicity. [Rabie, T. and Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x) Note: as this meta-analysis points out, the quality of studies for handwashing (at least in high-income countries) are awful.
 
 [^london]: “We found a 73% reduction in the average daily number of contacts observed per participant. This would be sufficient to reduce R0 from a value from 2.6 before the lockdown to 0.62 (0.37 - 0.89) during the lockdown”. We rounded it down to 70% in these simulations for simplicity. [Jarvis and Zandvoort et al](https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html)
 
-**Play with this calculator to see how % of <span class="nowrap">non-<icon s></icon>,</span> handwashing, and distancing reduce R:** (this calculator visualizes their *relative* effects, which is why increasing one *looks* like it decreases the effect of the others.[^log_caveat])
+**കൈകഴുകുകയും, അകലം പാലിക്കുകയും ചെയ്യുന്ന ആളുകളൂടെ ശതമാനം R വില എങ്ങിനെ കുറയ്ക്കുമെന്നറിയാൻ ഈ കാൽക്കുലേറ്റർ ഉപയോഗിച്ച് നോക്കൂ:** (ഈ കാൽക്കുലേറ്റർ ചിത്രീകരിക്കുന്നത് *പരസ്പര ബന്ധിതമായ* ഫലങ്ങളാണ്, അതിനാലാണ് ഒന്ന് വർദ്ധിപ്പിക്കുമ്പോൾ അത് മറ്റുള്ളവയുടെ ഫലം കുറയ്ക്കുന്നതായി *തോന്നുന്നത്.*[^log_caveat])
 
-[^log_caveat]: This distortion would go away if we plotted R on a logarithmic scale... but then we'd have to explain *logarithmic scales.*
+[^log_caveat]: R ഒരു ലോഗരിതമിക് സ്കെയിലിൽ ചിത്രീകരിച്ചാൽ ഈ പ്രശ്നം ഒഴിവാകും, ... പക്ഷെ അപ്പോൾ നമുക്ക് *ലോഗരിതമിക് സ്കെയിൽ* എന്താണെന്ന് വിശദീകരിക്കേണ്ടി വരും.
 
 <div class="sim">
         <iframe src="sim?stage=int-2a&format=calc" width="285" height="260"></iframe>
 </div>
 
-Now, let's simulate what happens to a COVID-19 epidemic if, starting March 2020, we had increased handwashing but only *mild* physical distancing – so that R is lower, but still above 1:
+ഇപ്പോൾ, മാർച്ച് 2020 മുതൽ വർദ്ധിച്ച തോതിൽ കൈകൾ കഴുകുകയും *ചെറിയ* തോതിൽ മാത്രം ശാരീരിക അകലം പാലിക്കുകയും ചെയ്തിരുന്നെങ്കിൽ, കോവിഡ്-19 മഹാമാരിക്കെന്ത് സംഭവിക്കുമായിരുന്നു എന്ന് നോക്കാം – R ഇപ്പോഴും ചെറുതാണ്, എന്നാൽ ഒന്നിനു മുകളിലുമാണ്:
 
 <div class="sim">
         <iframe src="sim?stage=int-2&format=lines" width="800" height="540"></iframe>
 </div>
 
-Three notes:
+മൂന്ന് കുറിപ്പുകൾ:
 
-1.	This *reduces* total cases! **Even if you don't get R < 1, reducing R still saves lives, by reducing the 'overshoot' above herd immunity.** Lots of folks think "Flatten The Curve" spreads out cases without reducing the total. This is impossible in *any* Epidemiology 101 model. But because the news reported "80%+ will be infected" as inevitable, folks thought total cases will be the same no matter what. *Sigh.*
+1.	This *reduces* total cases! **Even if you don't get R < 1, reducing R still saves lives, by reducing the 'overshoot' above herd immunity.** Lots of folks think "Flatten The Curve" spreads out cases without reducing the total. This is impossible in *any* Epidemiology 101 model. But because the news reported "80%+ will be infected" as inevitable, folks thought total cases will be the same no matter what. *Sigh.* ഈ പ്രക്രിയ മൊത്തം കേസുകൾ *കുറയ്ക്കുന്നു*! **നമുക്ക് R < 1 എന്നായില്ലെങ്കിലും, ഹെർഡ് ഇമ്മ്യൂണിറ്റിക്ക് മുകളിലേക്കുള്ള കുതിപ്പിന്റെ തോത് കുറയ്ക്കുക വഴി, R കുറയ്ക്കുന്നത് ജീവനുകൾ രക്ഷിക്കും.** "കർവിനെ പരത്തുക" എന്നത് കേസുകൾ കുറയ്ക്കാതെ മൊത്തം കേസുകൾ പരത്തിയെടുക്കുന്നതാണെന്ന് നിരവധിയാളുകൾ കരുതുന്നുണ്ട്. *ഏതൊരു* എപിഡെമിയോളജി 101 മോഡലിലും ഇത് അസംഭ്യവമാണ്. "80 ശതമാനന്തിൽ അധികം ആളുകൾ രോഗബാധിതരാകും" എന്ന മട്ടിലുള്ള വാർത്തകൾ ഒഴിവാക്കാനാവാത്തതിനാൽ, എന്ത് തന്നെ സംഭവിച്ചാലും മൊത്തം കേസുകൾ കുറയില്ല എന്ന് ചിലയാളുകൾ കരുതും. *!!!*
 
-2.	Due to the extra interventions, current cases peak *before* herd immunity is reached. In fact, in this simulation, total cases only overshoots *a tiny bit* above herd immunity – the UK's plan! At that point, R < 1, you can let go of all other interventions, and COVID-19 stays contained! Well, except for one problem...
+2.	അധികമായുള്ള ഇടപെടലുകൾ കാരണം, ഇപ്പോഴുള്ള കേസുകൾ, ഹെർഡ് ഇമ്മ്യൂണിറ്റി പരിധി എത്തുന്നതിനു *മുന്നെ* തന്നെ ഉന്നതിലെത്തും. യഥാർത്ഥത്തിൽ, ഈ സിമുലേഷനിൽ, മൊത്തം കേസുകൾ *ഒരു ചെറിയ അളവിൽ മാത്രമെ* ഹെർഡ് ഇമ്മ്യൂണിറ്റിക്ക് മുകളിലേക്ക് കുതിക്കൂ – യുകെയുടെ പദ്ധതി! ആ സമയത്ത്, R < 1, നിങ്ങൾക്ക് വേണമെങ്കിൽ മറ്റ് നിയന്ത്രണങ്ങളൊക്കെ വേണമെങ്കിൽ ഒഴിവാക്കാം, കോവിഡ്-19 നിയന്ത്രിതമായി തന്നെ നിൽക്കും! പക്ഷേ, ഒരു പ്രശ്നം ഇല്ലായിരുന്നെങ്കിൽ...
 
-3.	You still run out of ICUs. For several months. (and remember, we *already* tripled ICUs for these simulations)
+3.	ഇപ്പോഴും നമ്മൾ ഐസിയുകൾ നിറഞ്ഞ് കവിഞ്ഞ അവസ്ഥയിലാണ്. മാസങ്ങളോളം. (ഓർമ്മിക്കുക, നമ്മൾ സിമുലേഷൻസിനായി അവയുടെ എണ്ണം *നേരത്തെ തന്നെ* മൂന്നിരട്ടിയായി സങ്കല്പിച്ചിരുന്നു.)
 
-That was the other finding of the March 16 Imperial College report, which convinced the UK to abandon its original plan. Any attempt at **mitigation** (reduce R, but R > 1) will fail. The only way out is **suppression** (reduce R so that R < 1).
+
+മാർച്ച് 16ലെ ഇമ്പീരിയൽ കോളേജ് റിപ്പോർട്ടിലെ മറ്റൊരു കാര്യം അതായിരുന്നു, അതിന്റെ വെളിച്ചത്തിൽ യുകെ അവരുടെ ആദ്യത്തെ പ്ലാൻ വേണ്ടെന്ന് വച്ചു. **ശമനത്തിനുള്ള** ഏതൊരു ശ്രമവും (R കുറയുക്കുക, എന്നാൽ R > 1) പരാജയമായിരിക്കും. രക്ഷപെടാനുള്ള ഏക വഴി **ഒതുക്കുകയാണ്** (R < 1 രീതിയിൽ R കുറയ്ക്കുക).
 
 ![](pics/mitigation_vs_suppression.png)
 
-That is, don't merely "flatten" the curve, *crush* the curve. For example, with a...
+അതായത്, വെറുതെ കർവ് "ഫ്ലാറ്റാക്കാൻ" നോക്കുകയല്ല, അതിനെ *അടിച്ചുപരത്തുക* തന്നെ. ഉദാഹരണമായി ഒരു...
 
-###Scenario 2: Months-Long Lockdown
+### സീൻ 2: മാസങ്ങൾ-നീളുന്ന ലോക്ക്ഡൗൺ
 
-Let's see what happens if we *crush* the curve with a 5-month lockdown, reduce <icon i></icon> to nearly nothing, then finally – *finally* – return to normal life:
+ഒരു അഞ്ച്-മാസത്തെ ലോക്ക്ഡൗൺ വഴി കർവിനെ *അടിച്ചുപരത്തി*, <icon i></icon> ഇല്ലാത്ത അവസ്ഥയിലേക്ക്, അങ്ങിനെ – *അവസാനം* – സാധാരണ ജീവിതത്തിലേക്ക് തിരിച്ച് പോയാൽ:
 
 <div class="sim">
         <iframe src="sim?stage=int-3&format=lines" width="800" height="540"></iframe>
 </div>
 
-Oh.
+ഓ.
 
-This is the "second wave" everyone's talking about. As soon as we remove the lockdown, we get R > 1 again. So, a single leftover <icon i></icon> (or imported <span class="nowrap"><icon i></icon>\)</span> can cause a spike in cases that's almost as bad as if we'd done Scenario 0: Absolutely Nothing.
+ഇതാണ് എല്ലാവരും പറയുന്ന "രണ്ടാമത്തെ തരംഗം." നമ്മൾ ലോക്ക്ഡൗൺ നീക്കുമ്പോഴേക്കും, R വീണ്ടും R > 1 എന്ന സ്ഥിതിയിലേക്ക് പോകുന്നു. അതായത്, ഒരു ചെറിയ അംശമോ <icon i></icon> (അല്ലെങ്കിൽ പുറത്ത് നിന്ന് വരുന്നവരോ <span class="nowrap"><icon i></icon>\)</span> വീണ്ടും രോഗം കുതിച്ചുയരാൻ ഇടയാവുകയും, നമ്മൾ സീൻ 0-യിൽ കണ്ടത്തിനേക്കാൾ: ഒന്നും ചെയ്യാതിരുന്നാലുള്ളതിനേക്കാൾ മോശം അവസ്ഥയിലേക്ക് എത്തുകയും ചെയ്യും.
 
-**A lockdown isn't a cure, it's just a restart.**
 
-So, what, do we just lockdown again & again?
+**രുോക്ക്ഡൗൺ ഒരു രോഗശാന്തിയല്ല, അതു വീണ്ടൂമൊരു തുടക്കം മാത്രമാണ്.**
 
-###Scenario 3: Intermittent Lockdown
+അപ്പോൾ നമ്മൾ വീണ്ടൂം, വീണ്ടൂം ലോക്ക്ഡൗൺ ചെയ്യണോ?
 
-This solution was first suggested by the March 16 Imperial College report, and later again by a Harvard paper.[^lockdown_harvard]
+### സീൻ 3: ഇടവിട്ടുള്ള ലോക്ക്ഡൗൺ
+
+ഇതാദ്യമായി മാർച്ച് 16-ലെ ഇമ്പീരിയൽ കോളേജ് റിപ്പോർട്ടും, പിന്നീട് ഒരു ഹാർവാർഡ് സർവകലാശാല പ്രബന്ധവും മുന്നോട്ട് വച്ചൊരു പരിഹാരമാണ്.[^lockdown_harvard]
 
 [^lockdown_harvard]: “Absent other interventions, a key metric for the success of social distancing is whether critical care capacities are exceeded. To avoid this, prolonged or intermittent social distancing may be necessary into 2022.” [Kissler and Tedijanto et al](https://science.sciencemag.org/content/early/2020/04/14/science.abb5793)
 
-**Here's a simulation:** (After playing the "recorded scenario", you can try simulating your *own* lockdown schedule, by changing the sliders *while* the simulation is running! Remember you can pause & continue the sim, and change the simulation speed)
+**ഇതാ ഒരു സിമുലേഷൻ:** ("റെക്കോർഡ് ചെയ്ത സാഹചര്യം" പ്ലേ ചെയ്ത് കഴിഞ്ഞ്, നിങ്ങൾക്ക് നിങ്ങളുടെ *സ്വന്തം* ലോക്ക്ഡൗൺ ഷെഡ്യൂൾ, സ്ലൈഡറുകൾ മാറ്റി സിമുലേഷനിടയ്ക്ക് *തന്നെ* ശ്രമിച്ച് നോക്കാം. ഇടയ്ക്ക് വച്ച് നിർത്താമെന്നും, സിമുലേഷൻ വീണ്ടൂം തുടരാമെന്നും, അതിന്റെ വേഗത മാറ്റാമെന്നും ഓർമ്മിക്കുക.)
 
 <div class="sim">
         <iframe src="sim?stage=int-4&format=lines" width="800" height="540"></iframe>
 </div>
 
-This *would* keep cases below ICU capacity! And it's *much* better than an 18-month lockdown until a vaccine is available. We just need to... shut down for a few months, open up for a few months, and repeat until a vaccine is available. (And if there's no vaccine, repeat until herd immunity is reached... in 2022.)
+ഇത് മൊത്തം കേസുകളെ ഐസിയു ലഭ്യതയ്ക്കുള്ളിൽ ഒതുക്കി നിർത്താൻ *സഹായിക്കും*! കൂടാതെ, ഒരു വാക്സിൻ ലഭ്യമാക്കുന്നത് വരെ, ഇതാണ് 18-മാസത്തെ ലോക്ക്ഡൗണിനേക്കാൾ *വളരെ* മികച്ചത്. നമ്മൾ... ഏതാനും മാസങ്ങൾ അടച്ചിടൂന്നു, പിന്നെ ഏതാനും മാസങ്ങൾ തുറക്കുന്നു, അങ്ങിനെ വാക്സിൻ ലഭിക്കുന്നത് വരെ ഇത് തുടരുന്നു. (വാക്സിൻ ലഭിക്കുന്നില്ലെങ്കിൽ ഹെർഡ് ഇമ്മ്യൂണിറ്റി ഉണ്ടാവുന്നത് വരെ ഇത് തുടരുന്നു.. 2022 വരെ.)
 
-Look, it's nice to draw a line saying "ICU capacity", but there's lots of important things we *can't* simulate here. Like:
+"ഐസിയു കപ്പാസിറ്റി" എന്നൊരു വര വരയ്ക്കാൻ എളുപ്പമാണ്, എന്നാൽ നമുക്ക് ഇവിടെ സിമുലേറ്റ് ചെയ്യാൻ *പറ്റാത്ത* നിരവധി പ്രധാനപ്പെട്ട കാര്യങ്ങളുണ്ട്. ഉദാഹരണമായി:
 
-**Mental Health:** Loneliness is one of the biggest risk factors for depression, anxiety, and suicide. And it's as associated with an early death as smoking 15 cigarettes a day.[^loneliness]
+**മാനസിക ആരോഗ്യം:** ഒറ്റപ്പെടൽ വിഷാദ രോഗം, ഉത്കണ്ഠ, ആത്മഹത്യ എന്നിവയിലേക്കെല്ലാം നയിച്ചേക്കാം. ഒരു ദിവസം 15 സിഗരറ്റ് വലിക്കുന്നതിനു സമാനമായ രീതിയിൽ അകാല മരണത്തിനും ഇത് കാരണമാവാം.[^loneliness]
 
 [^loneliness]: See [Figure 6 from Holt-Lunstad & Smith 2010](https://journals.sagepub.com/doi/abs/10.1177/1745691614568352). Of course, big disclaimer that they found a *correlation*. But unless you want to try randomly assigning people to be lonely for life, observational evidence is all you're gonna get.
 
-**Financial Health:** "What about the economy" sounds like you care more about dollars than lives, but "the economy" isn't just stocks: it's people's ability to provide food & shelter for their loved ones, to invest in their kids' futures, and enjoy arts, foods, videogames – the stuff that makes life worth living. And besides, poverty *itself* has horrible impacts on mental and physical health.
+**സാമ്പത്തിക ആരോഗ്യം:** "സമ്പദ് വ്യവസ്ഥയെപ്പറ്റി എന്ത് പറയുന്നു" എന്ന് ചോദിച്ചാൽ നിങ്ങൾക്ക് പണത്തെപ്പറ്റി മാത്രമേ ചിന്തയുള്ളൂ എന്ന് തോന്നിപ്പിച്ചേക്കാ, എന്നാൽ "സമ്പദ് വ്യവസ്ഥ" എന്നാൽ വെറും ഷെയർ മാർക്കറ്റല്ല: അത് തങ്ങളുടെ പ്രിയപ്പെട്ടവർക്ക് ഭക്ഷണവും, പാർപ്പിടവും നൽകാനുള്ള മനുഷ്യരുടെ കഴിവാണ്. തങ്ങളുടെ കുട്ടികളൂടെ ഭാവിയിലേക്ക് നിക്ഷേപിക്കാൻ, കല, ഭക്ഷണം, വീഡിയോ ഗെയിമുകൾ – ജീവിതത്തിനു മൂല്യം നൽകുന്ന കാര്യങ്ങൾ ആസ്വദിക്കാനുള്ള കഴിവു കൂടിയാണത്. അത് മാറ്റിനിർത്തിയാൽ, ദാരിദ്ര്യത്തിന് *അതിനാൽ തന്നെ* മാനസിക, സാമ്പത്തിക ആരോഗ്യ കാര്യങ്ങളിൽ ഭവിഷ്യത്തുകൾ ഉണ്ടാക്കാൻ കഴിയും.
 
-Not saying we *shouldn't* lock down again! We'll look at "circuit breaker" lockdowns later. Still, it's not ideal.
+നമ്മൾ വീണ്ടൂം ലോക്ക് ഡൗൺ *ചെയ്യരുത്* എന്നല്ല പറയുന്നത്! "സർക്കീട്ട് ബ്രെക്കർ" ലോക്ക്ഡൗണൂകളേപ്പറ്റി നമുക്ക് പിന്നീട് സംസാരിക്കാം. എന്നിരിക്കലും, അത് ഉദാത്തമായതല്ല.
 
-But wait... haven't Taiwan and South Korea *already* contained COVID-19? For 4 whole months, *without* long-term lockdowns?
+പക്ഷെ ഒന്ന് നിൽക്കൂ... തയ്വാനും ദക്ഷിണ കൊറിയയും *ഇപ്പോൾതന്നെ* കോവിഡ്-19-നെ പിടിച്ച് കെട്ടിയില്ലേ? 4 മാസത്തേക്ക്, നീണ്ട ലോക്ക്ഡൗണുകൽ *ഇല്ലാതെ തന്നെ*
 
-How?
+എങ്ങിനെ?
 
-###Scenario 4: Test, Trace, Isolate
+### സീൻ 4: ടെസ്റ്റ്, ട്രേസ്, ഐസൊലേറ്റ്
 
-*"തീർച്ചയായും, നമുക്ക് തയ്.വാനും ദക്ഷിണ കൊറിയയും തുടക്കത്തിൽ ചെയ്തതുപോലെ *ചെയ്യാമായിരുന്നു*, പക്ഷേ ഇപ്പോൾ വളരെ വൈകിപ്പോയി. നമുക്ക് തുടക്കം നഷ്ടമായി."\*
+*"തീർച്ചയായും, നമുക്ക് തയ്.വാനും ദക്ഷിണ കൊറിയയും തുടക്കത്തിൽ ചെയ്തതുപോലെ *ചെയ്യാമായിരുന്നു*, പക്ഷേ ഇപ്പോൾ വളരെ വൈകിപ്പോയി. നമുക്ക് തുടക്കം നഷ്ടമായി."*
 
 എന്നാൽ അത് തന്നെയാണ് കാര്യം! “ലോക്ക്ഡൗൺ ഒരു പരിഹാരമല്ല, അതൊരു റീസ്റ്റാർട്ട് മാത്രമാണ്”... **ഒരു പുതിയ തുടക്കമാണ് നമുക്കാവശ്യം.**
 
 തയ്വാനും കൊറിയയും എങ്ങിനെയാണ് കോവിഡ്-19നെ പിടിച്ച് നിർത്തിയതെന്നറിയാൻ, നമുക്ക് കോവിഡ്-19 അണൂബാധയുടെ നാൾവഴി അറിയേണ്ടതുണ്ട്[^timeline]:
 
-[^timeline]: **രോഗബാധയേൽക്കാൻ ശരാശരി 3 ദിവസങ്ങൾ:** “ആദ്യകാല COVID-19 കേസുകളെക്കുറിച്ചുള്ള ഒരു പ്രത്യേക പഠനത്തിൽ നിന്ന് ശരാശരി 5.2 ദിവസത്തെ ഇൻകുബേഷൻ കാലയളവ് രോഗം പകർന്ന് തുടങ്ങുന്നുവെന്ന് ഞങ്ങൾ അനുമാനിക്കുന്നു, രോഗലക്ഷണം ആരംഭിക്കുന്നതിന് മുമ്പായി 2.3 ദിവസം (95% CI, 0.8–3.0 ദിവസം) മുതൽ പകർച്ചവ്യാധി ആരംഭിച്ചുവെന്ന് ഞങ്ങൾ അനുമാനിച്ചു” (എന്നു വച്ചാൽ: ലക്ഷണങ്ങൾ അഞ്ചാം ദിവസം ആരംഭിക്കുന്നു എന്ന് കരുതുക, പകർച്ചവ്യാധി ആരംഭിക്കുന്നത് അതിനു 2 ദിവസം മുമ്പ് = പകർച്ചവ്യാധി മൂന്നാം ദിവസത്തിൽ ആരംഭിക്കുന്നു) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
+[^timeline]: **രോഗബാധയേൽക്കാൻ ശരാശരി 3 ദിവസങ്ങൾ:** “ആദ്യകാല കോവിഡ്-19 കേസുകളെക്കുറിച്ചുള്ള ഒരു പ്രത്യേക പഠനത്തിൽ നിന്ന് ശരാശരി 5.2 ദിവസത്തെ ഇൻകുബേഷൻ കാലയളവ് രോഗം പകർന്ന് തുടങ്ങുന്നുവെന്ന് ഞങ്ങൾ അനുമാനിക്കുന്നു, രോഗലക്ഷണം ആരംഭിക്കുന്നതിന് മുമ്പായി 2.3 ദിവസം (95% CI, 0.8–3.0 ദിവസം) മുതൽ പകർച്ചവ്യാധി ആരംഭിച്ചുവെന്ന് ഞങ്ങൾ അനുമാനിച്ചു” (എന്നു വച്ചാൽ: ലക്ഷണങ്ങൾ അഞ്ചാം ദിവസം ആരംഭിക്കുന്നു എന്ന് കരുതുക, പകർച്ചവ്യാധി ആരംഭിക്കുന്നത് അതിനു 2 ദിവസം മുമ്പ് = പകർച്ചവ്യാധി മൂന്നാം ദിവസത്തിൽ ആരംഭിക്കുന്നു) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
 
-> **4 days on average to infecting someone else:** “The mean [serial] interval was 3.96 days (95% CI 3.53–4.39 days)” [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article)
->
-> **5 days on average to feeling symptoms:** “The median incubation period was estimated to be 5.1 days (95% CI, 4.5 to 5.8 days)” [Lauer SA, Grantz KH, Bi Q, et al](https://annals.org/AIM/FULLARTICLE/2762808/INCUBATION-PERIOD-CORONAVIRUS-DISEASE-2019-COVID-19-FROM-PUBLICLY-REPORTED)
+    **4 days on average to infecting someone else:** “The mean [serial] interval was 3.96 days (95% CI 3.53–4.39 days)” [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article)
+    
+    **5 days on average to feeling symptoms:** “The median incubation period was estimated to be 5.1 days (95% CI, 4.5 to 5.8 days)” [Lauer SA, Grantz KH, Bi Q, et al](https://annals.org/AIM/FULLARTICLE/2762808/INCUBATION-PERIOD-CORONAVIRUS-DISEASE-2019-COVID-19-FROM-PUBLICLY-REPORTED)
 
 ![](pics/timeline1.png)
 
@@ -367,10 +414,10 @@ How?
 \([ഇതിന്റെ മുഴുവൻ ചിത്രീകരണം ഇവിടെ ലഭ്യമാണ്](https://ncase.me/contact-tracing/). കബളിപ്പിക്കൽ"/ഫാൾസ് പോസിറ്റീവ്/തുടങ്ങിയവയെപ്പറ്റിയുള്ള വിവരങ്ങൾ ഇവിടെ വായിക്കാം:[^dp3t_details])
 
 [^dp3t_details]: To prevent "pranking" (people falsely claiming to be infected), the DP-3T Protocol requires that the hospital first give you a One-Time Passcode that lets you upload your messages.
-
-> False positives are a problem in both manual & digital contact tracing. Still, we can reduce false positives in 2 ways: 1) By notifying Bobs only if they heard, say, 30+ min worth of messages, not just one message in passing. And 2) If the app *does* think Bob's been exposed, it can refer Bob to a *manual* contact tracer, for an in-depth follow-up interview.
->
-> For other issues like data bandwidth, source integrity, and other security issues, check out [the open-source DP-3T whitepapers!](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)
+    
+    False positives are a problem in both manual & digital contact tracing. Still, we can reduce false positives in 2 ways: 1) By notifying Bobs only if they heard, say, 30+ min worth of messages, not just one message in passing. And 2) If the app *does* think Bob's been exposed, it can refer Bob to a *manual* contact tracer, for an in-depth follow-up interview.
+    
+    For other issues like data bandwidth, source integrity, and other security issues, check out [the open-source DP-3T whitepapers!](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)
 
 ടി‌സി‌എൻ‌ പ്രോട്ടോക്കോൾ‌[^tcn], എം‌ഐ‌ടി PACT[^pact], എന്നിവയെപ്പോലുള്ള സമാന ടീമുകൾക്കൊപ്പം, സ്വകാര്യതയ്ക്ക് പ്രഥമ പരിഗണന നൽകുന്ന കോണ്ടാക്റ്റ് ട്രെയ്സിംഗ് ആൻഡ്രോയ്ഡ് / ഐ-ഓഎസിലേക്ക് നേരിട്ട് എത്തിക്കാൻ .[^gapple](ഗൂഗിളി / ആപ്പിളി - നെ വിശ്വസിക്കരുത് എന്നാണോ? കൊള്ളാം! ഈ സിസ്റ്റത്തിന്റെ ഭംഗിയെന്തെന്നാൽ ഇതിന് വിശ്വാസ്യത *ആവശ്യമില്ല* എന്നതാണ്!) താമസിയാതെ, നിങ്ങളുടെ പ്രാദേശിക പൊതുജനാരോഗ്യ ഏജൻസി നിങ്ങളോട് ഒരു അപ്ലിക്കേഷൻ ഡൗൺലോഡുചെയ്യാൻ ആവശ്യപ്പെട്ടേക്കാം. പൊതുവായി ലഭ്യമായ കോഡ് ഉപയോഗിക്കുന്നതും, സ്വകാര്യതയ്ക്ക് പ്രഥമ പരിഗണന നൽകുന്നതുമാണിതെങ്കിൽ, ദയവായി അത് ഇൻസ്റ്റാൾ ചെയ്യുക!
 
@@ -386,20 +433,20 @@ How?
 
 [^rant]: Lots of news reports – and honestly, many research papers – did not distinguish between "cases who showed no symptoms when we tested them" (pre-symptomatic) and "cases who showed no symptoms *ever*" (true asymptomatic). The only way you could tell the difference is by following up with cases later.
 
-> Which is what [this study](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article) did. (Disclaimer: "Early release articles are not considered as final versions.") In a call center in South Korea that had a COVID-19 outbreak, "only 4 (1.9%) remained asymptomatic within 14 days of quarantine, and none of their household contacts acquired secondary infections."
->
-> So that means "true asymptomatics" are rare, and catching the disease from a true asymptomatic may be even rarer!
+    Which is what [this study](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article) did. (Disclaimer: "Early release articles are not considered as final versions.") In a call center in South Korea that had a COVID-19 outbreak, "only 4 (1.9%) remained asymptomatic within 14 days of quarantine, and none of their household contacts acquired secondary infections."
+    
+    So that means "true asymptomatics" are rare, and catching the disease from a true asymptomatic may be even rarer!
 
 *രോഗലക്ഷണമുള്ള* കേസുകൾ ഒറ്റപ്പെടുത്തുന്നത് R വില 40% വരെ കുറയ്ക്കും, കൂടാതെ അവരുടെ രോഗലക്ഷണം *വരുന്നതിനും/ ശേഷവുമുള്ള* കോൺടാക്റ്റുകളെ ക്വാറന്റൈൻ ചെയ്യുന്നത് R 50% വരെ കുറയ്ക്കും[^oxford]:
 
 [^oxford]: From the same Oxford study that first recommended apps to fight COVID-19: [Luca Ferretti & Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) See Figure 2. Assuming R<sub>0</sub> = 2.0, they found that:
 
-> -	Symptomatics contribute R = 0.8 (40%)
-> -	Pre-symptomatics contribute R = 0.9 (45%)
-> -	Asymptomatics contribute R = 0.1 (5%, though their model has uncertainty and it could be much lower)
-> -	Environmental stuff like doorknobs contribute R = 0.2 (10%)
->
-> And add up the pre- & a-symptomatic contacts (45% + 5%) and you get 50% of R!
+     -	Symptomatics contribute R = 0.8 (40%)
+     -	Pre-symptomatics contribute R = 0.9 (45%)
+     -	Asymptomatics contribute R = 0.1 (5%, though their model has uncertainty and it could be much lower)
+     -	Environmental stuff like doorknobs contribute R = 0.2 (10%)
+    
+     And add up the pre- & a-symptomatic contacts (45% + 5%) and you get 50% of R!
 
 <div class="sim">
         <iframe src="sim?stage=int-4a&format=calc" width="285" height="340"></iframe>
@@ -436,7 +483,7 @@ How?
 
 അശുഭാപ്തിവിശ്വാസി പാരച്യൂട്ട് കണ്ടുപിടിക്കുന്നത് പോലെ.
 
-###സീൻ 4+:എല്ലാവർക്കും മാസ്കുകൾ, വേനൽക്കാലം, സർക്യൂട്ട് ബ്രേക്കറുകളും
+### സീൻ 4+:എല്ലാവർക്കും മാസ്കുകൾ, വേനൽക്കാലം, സർക്യൂട്ട് ബ്രേക്കറുകളും
 
 R<sub>0</sub> നമ്മൾ വിചാരിച്ചതിലും വളരെ ഉയർന്നതാണെങ്കിൽ, മുകളിൽ പറഞ്ഞ ഇടപെടലുകൾ, നേരിയ ശാരീരിക അകലം സൂക്ഷിച്ചാൽ <em>പോലും</em>, R < 1 ലഭിക്കാൻ പര്യാപ്തമല്ലെങ്കിലോ?\<
 
@@ -562,41 +609,42 @@ R നെ താഴേക്ക് താഴ്ത്താൻ നമുക്ക
 
 [^monkeys]: From [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *Disclaimer: This article is a preprint and has not been certified by peer review (yet).* Also, to emphasize: they only tested re-infection 28 days later.
 
-For these simulations, let's say it's 1 year. **ഇതാ ഒരു സിമുലേഷൻ, 100% <span class="nowrap"><icon r></icon>**,</span> exponentially decaying into susceptible, no-immunity <span class="nowrap"><icon s></icon>s</span> after 1 year, on *average*, with variation:
+ഈ സിമുലേഷനുകൾക്ക്, ഒരു വർഷ കാലാവധി നമുക്കനുമാനിക്കാം. **ഇതാ ഒരു സിമുലേഷൻ, 100% <span class="nowrap"><icon r></icon>**,</span> നിന്നും ആരംഭിച്ച്, ഒരു വർഷത്തിനു ശേഷം *ശരാശരി*, വ്യതിയാനത്തോടുകൂടി, <span class="nowrap"><icon s></icon>s</span> രോഗപ്രതിരോധശേഷി ഇല്ലാത്തവയായി മാറുന്നു:
 
 <div class="sim">
         <iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
 </div>
 
-Return of the exponential decay!
+എക്‌സ്‌പോണൻഷ്യൽ ഡീകെയുടെ മടങ്ങിവരവ്!
 
-This is the **SEIRS Model**. The final "S" stands for <icon s></icon> Susceptible, again.
+ഇതാണ് **SEIRS** മോഡൽ. അവസാനത്തെ "S" രോഗം വീണ്ടൂം പിടിപെടാൻ ഇടയുള്ളവരെ <icon s></icon> സൂചിപ്പിക്കുന്നു.
 
 ![](pics/seirs.png)
 
-Now, let's simulate a COVID-19 outbreak, over 10 years, with no interventions... *if immunity only lasts a year:*
+ഇനി, നമുക്ക് ഒരു കോവിഡ്-19 വിസ്ഫോടനം സിമുലേറ്റ് ചെയ്യാം, 10 വർഷത്തിലധികം, യാതൊരു ഇടപെടലുകളും ഇല്ലാതെ ... *പ്രതിരോധശേഷി ഒരു വർഷം മാത്രം നീണ്ടുനിൽക്കുന്നെങ്കിൽ:*
 
 <div class="sim">
         <iframe src="sim?stage=yrs-2&format=lines&height=600" width="800" height="600"></iframe>
 </div>
 
-In previous simulations, we only had *one* ICU-overwhelming spike. Now, we have several, *and* <icon i></icon> cases come to a rest *permanently at* ICU capacity. (Which, remember, we *tripled* for these simulations)
+മുമ്പത്തെ സിമുലേഷനുകളിൽ, നമുക്ക് ഐസിയു പരിധി കടക്കുന്ന *ഒരു* സ്പൈക്ക് മാത്രമേ ഉണ്ടായിരുന്നുള്ളൂ. ഇപ്പോൾ, നമുക്ക് നിരവധിയുണ്ട്, കേസുകൾ ഐസിയു ശേഷിയിൽ എത്തി *ശാശ്വതമായി* നിൽക്കുന്നു. (ഏത്, ഓർക്കുക, ഈ സിമുലേഷനുകൾക്കായി നമ്മളത് മൂന്നിരട്ടിയാക്കിയിരുന്നു)
 
-R = 1, it's **endemic.**
 
-Thankfully, because summer reduces R, it'll make the situation better:
+R = 1, ഇത് **പ്രാദേശികമായി** ഒതുങ്ങിനിൽക്കുന്ന ഒന്നായിരിക്കുന്നു.
+
+നമുക്ക് നന്ദി പറയാം, വേനൽക്കാലം R കുറയ്ക്കുന്നതിനാൽ, ഇത് സാഹചര്യം മെച്ചപ്പെടുത്തും:
 
 <div class="sim">
         <iframe src="sim?stage=yrs-3&format=lines&height=640" width="800" height="640"></iframe>
 </div>
 
-Oh.
+ഓ.
 
-Counterintuitively, summer makes the spikes worse *and* regular! This is because summer reduces new <span class="nowrap"><icon i></icon>s,</span> but that in turn reduces new immune <span class="nowrap"><icon r></icon>s.</span> Which means immunity plummets in the summer, *creating* large regular spikes in the winter.
+ിധിവൈപരീത്യമെന്നപോലെ, വേനൽക്കാലം രോഗത്തിന്റെ കുതിപ്പിനെ മോശം അവസ്ഥയിലേക്കെത്തിക്കുകയും അവരെ ഒരു പതിവാക്കുകയും ചെയ്യുന്നു! വേനൽക്കാലം പുതിയ <span class="nowrap"><icon i></icon>കളെ *കുറയ്ക്കുന്നതിനൊപ്പം,* പുതിയ <span class="nowrap"><icon r></icon>കളൂടെ രോഗപ്രതിരോധ ശേഷിയും കുറയ്ക്കുന്നു <span>s.</span> ഇതിനർത്ഥം വേനൽക്കാലത്ത് പ്രതിരോധശേഷി കുറയുകയും, ശൈത്യകാലത്ത് അതിനാൽ വലിയ വർദ്ധനവ് *സൃഷ്ടിക്കപ്പെടുകയും* ചെയ്യുന്നു.
 
-Thankfully, the solution to this is pretty straightforward – just vaccinate people every fall/winter, like we do with flu shots:
+ആശ്വാസമെന്തെന്നാൽ, ഇതിനുള്ള പരിഹാരം വളരെ ലളിതമാണ് - ഫ്ലൂ ഷോട്ടുകൾ പോലെ, എല്ലാ ഇലപൊഴിയും കാലത്തും/ ശൈത്യകാലത്തും ആളുകൾക്ക് വാക്സിനേഷൻ നൽകുക:
 
-**(After playing the recording, try simulating your own vaccination campaigns! Remember you can pause/continue the sim at any time)**
+**(റെക്കോർഡിംഗ് പ്ലേ ചെയ്ത ശേഷം, നിങ്ങളുടെ സ്വന്തം വാക്സിനേഷൻ കാമ്പെയ്‌നുകൾ സിമുലേറ്റ് ചെയ്യാൻ ശ്രമിക്കുക! നിങ്ങൾക്ക് എപ്പോൾ വേണമെങ്കിലും സിമുലേഷൻ താൽക്കാലികമായി നിർത്താനോ തുടരാനോ കഴിയുമെന്ന് ഓർമ്മിക്കുക)**
 
 <div class="sim">
         <iframe src="sim?stage=yrs-4&format=lines" width="800" height="540"></iframe>
