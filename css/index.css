@@ -1,4 +1,5 @@
-@import url('https://smc.org.in/fonts/rachana.css');
+@import url('https://smc.org.in/fonts/uroob.css');
+@import url('https://smc.org.in/fonts/manjari.css')
 
 @font-face {
 	font-family: 'TN Joy';
@@ -12,7 +13,7 @@
 
 body{
 	margin:0;
-	font-family: 'TN Joy', Rachana, Helvetica, Arial, sans-serif;
+	font-family: 'Manjari', Helvetica, Arial, sans-serif;
 	font-size: 22px;
 	font-weight: 100;
 	line-height: 1.7em;
@@ -73,6 +74,7 @@ article > p, article > ul, article > ol, article > h1, article > h2, article > h
 	height: 250px;
     font-size: 70px;
     font-weight: bold;
+    font-family: 'Uroob', sans-serif;
 }
 .section.chapter > div > div{
 	position: absolute;
