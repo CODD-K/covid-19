@@ -99,7 +99,7 @@
 
 ദാ, *ഇവിടെയാണ്* പ്രശസ്തമായ ആ കർവ് ഉണ്ടാകുന്നത്! ഇതൊരു ബെൽ കർവ് അല്ല, ഇതൊരു "ലോഗ്-നോർമൽ" കർവും അല്ല. ഇതിനു പ്രത്യേകിച്ച് പേരൊന്നുമില്ല. ഇത് പക്ഷെ നിങ്ങൾ ഒത്തിരിവട്ടം കണ്ടുകാണും, എല്ലായിടത്തും അടിച്ച് പരത്തുന്നതായി കണ്ടത് തന്നെ. 
 
-ഇതാണ് **SIR മോഡൽ**,[^sir]<icon s></icon>**S**usceptible (രോഗം ബാധിക്കാനിടയുള്ളവർ) <icon i></icon>**I**nfectious (രോഗമുള്ളവർ) <icon r></icon>**R**ecovered (സുഖമായവർ))  
+ഇതാണ് **SIR മോഡൽ**,[^sir] <icon s></icon>**S**usceptible (രോഗം ബാധിക്കാനിടയുള്ളവർ) <icon i></icon>**I**nfectious (രോഗമുള്ളവർ) <icon r></icon>**R**ecovered (സുഖമായവർ))  
 എപിഡെമിയോളജി 101ലെ *രണ്ടാമത്തെ* ഏറ്റവും പ്രധാനപ്പെട്ട കാര്യം: 
 [^sir]: For more technical explanations of the SIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-sir.html#) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)
 
@@ -160,7 +160,7 @@
         <iframe src="sim?stage=epi-6a&format=calc" width="285" height="255"></iframe>
 </div>
 
-പക്ഷെ ഓർമ്മിക്കുക, കുറച്ച് <span class="nowrap"><icon s></icon>s</span> ഉള്ളപ്പോൾ, *കുറഞ്ഞ* <span class="nowrap"><icon s></icon>s</span> വേഗയിലേ <span class="nowrap"><icon i></icon>s</span> ആകൂ. *ഇപ്പോഴത്തെ* റിപ്രൊഡക്ഷൻ നമ്പർ (R) *തുടക്കത്തിലെ* റിപ്രൊഡക്ഷൻ നമ്പരിനെ (R<sub>0</sub>) മാത്രമല്ല, *കൂടാതെ* രോഗം ബാധിക്കാനിടയില്ലാത്ത എത്രയാളുകൾ ഉണ്ടെന്നതിക്കൂടി <icon s></icon> ആശ്രയിച്ചിരിക്കുന്നു. (ഉദാഹരണത്തിന്, സൗഖ്യം പ്രാപിക്കുന്നവർ, സ്വാഭാവിക പ്രതിരോധശേഷി ലഭിക്കുന്നവർ, എന്നിങ്ങനെയുള്ളവരുടെ എണ്ണം.)
+പക്ഷെ ഓർമ്മിക്കുക, കുറച്ച് <span class="nowrap"><icon s></icon>-കൾ</span> ഉള്ളപ്പോൾ, *കുറഞ്ഞ* <span class="nowrap"><icon s></icon>-കൾ</span> വേഗയിലേ <span class="nowrap"><icon i></icon>-കൾ</span> ആകൂ. *ഇപ്പോഴത്തെ* റിപ്രൊഡക്ഷൻ നമ്പർ (R) *തുടക്കത്തിലെ* റിപ്രൊഡക്ഷൻ നമ്പരിനെ (R<sub>0</sub>) മാത്രമല്ല, *കൂടാതെ* രോഗം ബാധിക്കാനിടയില്ലാത്ത എത്രയാളുകൾ ഉണ്ടെന്നതിക്കൂടി <icon s></icon> ആശ്രയിച്ചിരിക്കുന്നു. (ഉദാഹരണത്തിന്, സൗഖ്യം പ്രാപിക്കുന്നവർ, സ്വാഭാവിക പ്രതിരോധശേഷി ലഭിക്കുന്നവർ, എന്നിങ്ങനെയുള്ളവരുടെ എണ്ണം.)
 
 <div class="sim">
         <iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
