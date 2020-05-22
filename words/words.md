@@ -573,16 +573,16 @@ R നെ താഴേക്ക് താഴ്ത്താൻ നമുക്ക
 
 നിങ്ങൾക്ക് കോവിഡ്-19 ലഭിക്കുകയും, സുഖമാകുകയും ചെയ്യുന്നു. അല്ലെങ്കിൽ നിങ്ങൾക്ക് കോവിഡ്-19 വാക്സിൻ ലഭിക്കുന്നു. ഏതുവിധേനയും, നിങ്ങൾ ഇപ്പോൾ പ്രതിരോധശേഷിയുള്ളവരാണ് ...*എത്രനാളത്തേക്ക്?*
 
--	കോവിഡ്-19, സാർസുമായി വളരെ അടുത്ത ബന്ധമുള്ളതാണ്, അത് അതിജീവിച്ചവർക്ക് 2 വർഷത്തെ പ്രതിരോധശേഷി ലഭിക്കുകയുണ്ടായി. [^SARS immunity]
--	ജലദോഷത്തിന് കാരണമാകുന്ന കൊറോണ വൈറസുകൾ നിങ്ങൾക്ക് 8 മാസത്തെ പ്രതിരോധശേഷി നൽകുന്നു.[^cold immunity]
+-	കോവിഡ്-19, സാർസുമായി വളരെ അടുത്ത ബന്ധമുള്ളതാണ്, അത് അതിജീവിച്ചവർക്ക് 2 വർഷത്തെ പ്രതിരോധശേഷി ലഭിക്കുകയുണ്ടായി. [^SARS_immunity]
+-	ജലദോഷത്തിന് കാരണമാകുന്ന കൊറോണ വൈറസുകൾ നിങ്ങൾക്ക് 8 മാസത്തെ പ്രതിരോധശേഷി നൽകുന്നു.[^cold_immunity]
 -	കോവിഡ്-19ൽ നിന്ന് ആളുകൾ സുഖം പ്രാപിച്ചതിനെ തുടർന്ന് വീണ്ടും പോസിറ്റീവാകുന്നതായി റിപ്പോർട്ടുകൾ ഉണ്ട്, പക്ഷേ ഇവ തെറ്റായ പോസിറ്റീവ് ആണോ എന്ന് വ്യക്തമല്ല.[^unclear]
 -	കുരങ്ങുകളിൽ നടത്തിയ, ഇതുവരെ *പീയർ അവലോകനം ചെയ്യാത്ത* ഒരു പഠനത്തിൽ കോവിഡ്-19 കൊറോണ വൈറസിന് എതിരെ കുറഞ്ഞത് 28 ദിവസമെങ്കിലും പ്രതിരോധശേഷി ലഭിച്ചതായി പറയുന്നു.[^monkeys]
 
 പക്ഷെ 2020 മെയ് 1 ലെ കണക്കനുസരിച്ച്, *മനുഷ്യരിൽ* കോവിഡ്-19 ന് "എത്ര നാൾ" പ്രതിരോധശേഷി ലഭിക്കുമെന്നത് അജ്ഞാതമാണ്.
 
-[^SARS immunity]: “SARS-specific antibodies were maintained for an average of 2 years [...] Thus, SARS patients might be susceptible to reinfection ≥3 years after initial exposure.” [Wu LP, Wang NC, Chang YH, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/) "Sadly" we'll never know how long SARS immunity would have really lasted, since we eradicated it so quickly.
+[^SARS_immunity]: “SARS-specific antibodies were maintained for an average of 2 years [...] Thus, SARS patients might be susceptible to reinfection ≥3 years after initial exposure.” [Wu LP, Wang NC, Chang YH, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/) "Sadly" we'll never know how long SARS immunity would have really lasted, since we eradicated it so quickly.
 
-[^cold immunity]: “We found no significant difference between the probability of testing positive at least once and the probability of a recurrence for the beta-coronaviruses HKU1 and OC43 at 34 weeks after enrollment/first infection.” [Marta Galanti & Jeffrey Shaman (PDF)](http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf)
+[^cold_immunity]: “We found no significant difference between the probability of testing positive at least once and the probability of a recurrence for the beta-coronaviruses HKU1 and OC43 at 34 weeks after enrollment/first infection.” [Marta Galanti & Jeffrey Shaman (PDF)](http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf)
 
 [^unclear]: “Once a person fights off a virus, viral particles tend to linger for some time. These cannot cause infections, but they can trigger a positive test.” [from STAT News by Andrew Joseph](https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/)
 
