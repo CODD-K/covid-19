@@ -104,8 +104,9 @@
 
 ദാ, *ഇവിടെയാണ്* പ്രശസ്തമായ ആ കർവ് ഉണ്ടാകുന്നത്! ഇതൊരു ബെൽ കർവ് അല്ല, ഇതൊരു "ലോഗ്-നോർമൽ" കർവും അല്ല. ഇതിനു പ്രത്യേകിച്ച് പേരൊന്നുമില്ല. ഇത് പക്ഷെ നിങ്ങൾ ഒത്തിരിവട്ടം കണ്ടുകാണും, എല്ലായിടത്തും അടിച്ച് പരത്തുന്നതായി കണ്ടത് തന്നെ. 
 
-ഇതാണ് **SIR മോഡൽ**,[^sir_model] **S**usceptible <icon s></icon> (രോഗം ബാധിക്കാനിടയുള്ളവർ) **I**nfectious <icon i></icon> (രോഗമുള്ളവർ) **R**ecovered <icon r></icon> (സുഖമായവർ))  
-എപിഡെമിയോളജി ബാലപാഠങ്ങളിലെ *രണ്ടാമത്തെ* ഏറ്റവും പ്രധാനപ്പെട്ട കാര്യം:
+ഇതാണ് **SIR മോഡൽ**,[^sir_model] **S**usceptible <icon s></icon> (രോഗം ബാധിക്കാനിടയുള്ളവർ), **I**nfectious <icon i></icon> (രോഗമുള്ളവർ), **R**ecovered <icon r></icon> (സുഖമായവർ). 
+
+എപിഡെമിയോളജി ബാലപാഠങ്ങളിൽ ഏറ്റവും പ്രധാനപ്പെട്ട *രണ്ടാമത്തെ*  കാര്യം:
 
 [^sir_model]: For more technical explanations of the SIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-sir.html#) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)
 
