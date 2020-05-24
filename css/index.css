@@ -43,7 +43,7 @@ h1, h2, h3, h4{
     font-family: 'Gayathri', 'Manjari', Helvetica, Arial, sans-serif;
 }
 
-.heading h1{
+.heading{
     font-size: 95px;
     top: 70px;
     font-weight: bold;
