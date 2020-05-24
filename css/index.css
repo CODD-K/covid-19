@@ -1,6 +1,3 @@
-@import url('https://smc.org.in/fonts/uroob.css');
-@import url('https://smc.org.in/fonts/manjari.css');
-
 /*@font-face {
 	font-family: 'TN Joy';
 	font-style: normal;
@@ -11,9 +8,22 @@
 }*/
 
 
+/* Uroob */
+
+@font-face {
+	font-family: 'Uroob';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 700;
+	src: url(fonts/uroob/Uroob-Regular.woff2?v=Version2.0.2) format('woff2'), url(fonts/uroob/Uroob-Regular.woff?v=Version2.0.2) format('woff'), url(fonts/uroob/Uroob-Regular.ttf?v=Version2.0.2) format('truetype');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+0D01-0D7F, U+200C-U+200D, U+25CC;
+}
+
+
+
 body{
 	margin:0;
-	font-family: 'Manjari', Helvetica, Arial, sans-serif;
+	font-family: 'Gayathri', 'Manjari', Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 1.5em;
@@ -30,7 +40,7 @@ a:hover{
 }
 
 h1, h2, h3, h4{
-    font-family: 'Manjari', Helvetica, Arial, sans-serif;
+    font-family: 'Gayathri', 'Manjari', Helvetica, Arial, sans-serif;
 }
 
 .sim{
