@@ -262,7 +262,7 @@ R < 1 ആക്കുക.
 
 ### സീൻ 1: കർവിനെ പരത്തൂ / ഹെർഡ് ഇമ്മ്യൂണിറ്റി
 
-"കർവിനെ പരത്തൂ" പദ്ധതി എല്ലാ പൊതുജനാരോഗ്യ സംഘടനകളൂം വിളിച്ച് പറഞ്ഞപ്പോൾ, യുകെയിലെ "ഹെർഡ് ഇമ്മ്യൂണിറ്റി" പദ്ധതിയെ ലോകം മുഴുവൻ കൂക്കി വിളിച്ചു. രണ്ടൂം *ഒരേ പദ്ധതിയായിരുന്നു.* യുകെ സർക്കാരത് വിളിച്ച് പറഞ്ഞ രീതി പാളിപ്പോയി.[^yong]
+"കർവിനെ പരത്തൂ" (flatten the curve) പദ്ധതി എല്ലാ പൊതുജനാരോഗ്യ സംഘടനകളൂം വിളിച്ച് പറഞ്ഞപ്പോൾ, യുകെയിലെ "ഹെർഡ് ഇമ്മ്യൂണിറ്റി" പദ്ധതിയെ ലോകം മുഴുവൻ കൂക്കി വിളിച്ചു. രണ്ടൂം *ഒരേ പദ്ധതിയായിരുന്നു.* യുകെ സർക്കാരത് വിളിച്ച് പറഞ്ഞ രീതി പാളിപ്പോയി.[^yong]
 
 [^yong]: “He says that the actual goal is the same as that of other countries: flatten the curve by staggering the onset of infections. As a consequence, the nation may achieve herd immunity; it’s a side effect, not an aim. [...] The government’s actual coronavirus action plan, available online, doesn’t mention herd immunity at all.”
 
