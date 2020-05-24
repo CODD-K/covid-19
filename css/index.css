@@ -43,6 +43,13 @@ h1, h2, h3, h4{
     font-family: 'Gayathri', 'Manjari', Helvetica, Arial, sans-serif;
 }
 
+.heading h1{
+    font-size: 95px;
+    top: 70px;
+    font-weight: bold;
+    font-family: 'Uroob', Helvetica, Arial, sans-serif;
+}
+
 .sim{
 	width:100%;
 	background: #eee;
@@ -100,13 +107,6 @@ article > p, article > ul, article > ol, article > h1, article > h2, article > h
     height: 320px;
     right: 0;
     bottom: 0;
-}
-
-.heading {
-    font-size: 95px;
-    top: 70px;
-    font-weight: bold;
-    font-family: 'Uroob', Helvetica, Arial, sans-serif;
 }
 
 icon{
