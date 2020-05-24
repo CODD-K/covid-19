@@ -57,13 +57,13 @@ div{
 }
 
 .big_button{
-	font-weight: 100;
+	font-weight: 400;
 	background: #ff4040;
 	color: #fff;
 	padding:10px;
 	border-radius: 10px;
 	border-bottom: 4px solid rgba(0,0,0,0.2);
-	font-size: 20px;
+	font-size: 22px;
 	cursor: pointer;
 }
 .big_button:hover{
@@ -312,8 +312,8 @@ icon[r]{
 
 
 .control_icon{
-	width:36px;
-	height:36px;
+	width:28px;
+	height:28px;
 	background: url(../../icons/controls.png);
 	background-size: auto 100%;
 	display: inline-block;
