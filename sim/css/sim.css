@@ -319,7 +319,7 @@ icon[r]{
 	display: inline-block;
 
 	position: relative;
-	top: 4px;
+	top: 8px;
 }
 .control_icon[continue]{
 	background-position: -100% 0;
