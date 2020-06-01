@@ -8,8 +8,8 @@ name: "Build the website from HackMD"
 on:
   push:
     branches: [ master ]
-  schedule:
-    - cron: "*/5 * * * *"
+  # schedule:
+  #  - cron: "*/5 * * * *"
 
 jobs:
   update_from_hackmd:
